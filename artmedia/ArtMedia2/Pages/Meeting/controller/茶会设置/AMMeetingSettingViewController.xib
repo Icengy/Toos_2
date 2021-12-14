@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMeetingSettingViewController">
+            <connections>
+                <outlet property="agreementBtn" destination="Myt-vf-w2U" id="TQg-FB-Vxm"/>
+                <outlet property="agreementLabel" destination="Wwm-DW-9p8" id="GzY-Xs-grj"/>
+                <outlet property="agreementTitleLabel" destination="tfx-nB-ebV" id="7dJ-4h-iPa"/>
+                <outlet property="agreementView" destination="LLa-vP-5ck" id="L1P-NB-uvZ"/>
+                <outlet property="bottomView" destination="JlP-qX-Jqx" id="usk-AF-FPm"/>
+                <outlet property="confirmBtn" destination="iSR-Dp-Ac6" id="X67-It-WVV"/>
+                <outlet property="hadUpdateLabel" destination="0ez-qG-dNN" id="GBM-Aq-dpB"/>
+                <outlet property="meeting_a_View" destination="Fgb-MH-v6k" id="uXe-jO-Jx3"/>
+                <outlet property="meeting_b_View" destination="Alp-6U-XuU" id="Seg-AG-lDZ"/>
+                <outlet property="meeting_b_height_constraint" destination="vpk-7Z-Ugd" id="MAg-T1-ycf"/>
+                <outlet property="meeting_c_View" destination="1M7-vq-8BT" id="3Rp-GE-zdI"/>
+                <outlet property="meeting_c_height_constraint" destination="rTd-cy-aU8" id="83E-s1-njA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-qX-Jqx">
+                    <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSR-Dp-Ac6" customClass="AMButton">
+                            <rect key="frame" x="15" y="10" width="384" height="40"/>
+                            <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jvp-uf-egm"/>
+                            </constraints>
+                            <state key="normal" title="确定"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickToConfrim:" destination="-1" eventType="touchUpInside" id="R20-IA-RGT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="FtY-p9-ajV"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iSR-Dp-Ac6" firstAttribute="top" secondItem="JlP-qX-Jqx" secondAttribute="top" constant="10" id="FKa-wI-sh7"/>
+                        <constraint firstItem="FtY-p9-ajV" firstAttribute="bottom" secondItem="iSR-Dp-Ac6" secondAttribute="bottom" constant="10" id="LzH-yj-pAf"/>
+                        <constraint firstItem="iSR-Dp-Ac6" firstAttribute="leading" secondItem="FtY-p9-ajV" secondAttribute="leading" constant="15" id="Q0C-Ol-sET"/>
+                        <constraint firstItem="FtY-p9-ajV" firstAttribute="trailing" secondItem="iSR-Dp-Ac6" secondAttribute="trailing" constant="15" id="T4P-lN-nm4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLa-vP-5ck">
+                    <rect key="frame" x="49" y="772" width="316" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-vf-w2U" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="2" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="Mzi-Rl-t7o"/>
+                                <constraint firstAttribute="width" constant="26" id="YTa-R1-ll8"/>
+                            </constraints>
+                            <state key="normal" image="agreement_no"/>
+                            <state key="selected" image="agreement_yes"/>
+                            <connections>
+                                <action selector="clickToSelectedAgree:" destination="-1" eventType="touchUpInside" id="9z8-7G-k5I"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfx-nB-ebV">
+                            <rect key="frame" x="26" y="6.5" width="71.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.43921568630000002" green="0.45098039220000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《艺术融媒体约见会客服务协议》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwm-DW-9p8">
+                            <rect key="frame" x="101.5" y="-2" width="214.5" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.066666666669999999" green="0.4039215686" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq0-a7-VQy" customClass="AMButton">
+                            <rect key="frame" x="101.5" y="-2" width="214.5" height="34"/>
+                            <connections>
+                                <action selector="clickToSeeAgreemegnt:" destination="-1" eventType="touchUpInside" id="12p-gi-NPk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tfx-nB-ebV" firstAttribute="centerY" secondItem="LLa-vP-5ck" secondAttribute="centerY" id="FSG-O2-gfs"/>
+                        <constraint firstItem="Kq0-a7-VQy" firstAttribute="trailing" secondItem="Wwm-DW-9p8" secondAttribute="trailing" id="FU6-oH-Ta3"/>
+                        <constraint firstItem="Kq0-a7-VQy" firstAttribute="top" secondItem="Wwm-DW-9p8" secondAttribute="top" id="H74-I3-hQQ"/>
+                        <constraint firstAttribute="height" constant="30" id="J5T-yQ-dam"/>
+                        <constraint firstItem="Kq0-a7-VQy" firstAttribute="bottom" secondItem="Wwm-DW-9p8" secondAttribute="bottom" id="JUH-XQ-coa"/>
+                        <constraint firstItem="Myt-vf-w2U" firstAttribute="centerY" secondItem="LLa-vP-5ck" secondAttribute="centerY" id="NJK-aT-Z0C"/>
+                        <constraint firstItem="Wwm-DW-9p8" firstAttribute="leading" secondItem="tfx-nB-ebV" secondAttribute="trailing" constant="4" id="OOL-r4-AVo"/>
+                        <constraint firstItem="Kq0-a7-VQy" firstAttribute="leading" secondItem="Wwm-DW-9p8" secondAttribute="leading" id="fpl-zn-1XG"/>
+                        <constraint firstAttribute="trailing" secondItem="Wwm-DW-9p8" secondAttribute="trailing" id="iAp-bR-UWJ"/>
+                        <constraint firstItem="tfx-nB-ebV" firstAttribute="leading" secondItem="Myt-vf-w2U" secondAttribute="trailing" id="lPb-Fc-LDf"/>
+                        <constraint firstItem="Wwm-DW-9p8" firstAttribute="centerY" secondItem="LLa-vP-5ck" secondAttribute="centerY" id="pnS-cI-Pl7"/>
+                        <constraint firstItem="Myt-vf-w2U" firstAttribute="leading" secondItem="LLa-vP-5ck" secondAttribute="leading" id="wx3-j4-zgL"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3s-js-X8a">
+                    <rect key="frame" x="0.0" y="54" width="414" height="280"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保证金金额梯度已更新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-qG-dNN">
+                            <rect key="frame" x="0.0" y="-40" width="414" height="40"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="oGL-AA-EoP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.82745098039215681" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-MH-v6k" customClass="AMMeetingSettingAView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="cYj-Dz-QE4"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Alp-6U-XuU" customClass="AMMeetingSettingBView">
+                            <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="vpk-7Z-Ugd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-vq-8BT" customClass="AMMeetingSettingCView">
+                            <rect key="frame" x="0.0" y="130" width="414" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="rTd-cy-aU8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JlP-qX-Jqx" secondAttribute="trailing" id="1Ev-NF-cwb"/>
+                <constraint firstItem="JlP-qX-Jqx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i3s-js-X8a" secondAttribute="bottom" constant="10" id="3B2-mL-yCe"/>
+                <constraint firstItem="JlP-qX-Jqx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="AGf-ru-ekl"/>
+                <constraint firstItem="JlP-qX-Jqx" firstAttribute="top" secondItem="LLa-vP-5ck" secondAttribute="bottom" id="Di0-S5-eF4"/>
+                <constraint firstItem="JlP-qX-Jqx" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="EdK-Xz-r55"/>
+                <constraint firstItem="i3s-js-X8a" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ejd-65-KSO"/>
+                <constraint firstItem="i3s-js-X8a" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Vq1-tp-UK5"/>
+                <constraint firstItem="i3s-js-X8a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="asX-us-W3F"/>
+                <constraint firstItem="LLa-vP-5ck" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="deN-jj-tX0"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Kq0-a7-VQy">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="Myt-vf-w2U">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+        <designable name="iSR-Dp-Ac6">
+            <size key="intrinsicContentSize" width="37" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="agreement_no" width="12" height="12"/>
+        <image name="agreement_yes" width="12" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="WalletRevenueTopItemTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计收入：¥ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wZ-Br-Jr6">
+                        <rect key="frame" x="10" y="15" width="93" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vt2-Lz-TkO" customClass="GradientView">
+                        <rect key="frame" x="10" y="42" width="439" height="170"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-Vi-DOf">
+                                <rect key="frame" x="20" y="15" width="399" height="145"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bI-Fr-he8">
+                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销售" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-S9-5AV">
+                                                <rect key="frame" x="10" y="0.0" width="27" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-AF-sl2" customClass="WalletRevenueItemView">
+                                                <rect key="frame" x="0.0" y="21" width="189.5" height="124"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NnX-AF-sl2" firstAttribute="leading" secondItem="5bI-Fr-he8" secondAttribute="leading" id="1Tr-cC-1KK"/>
+                                            <constraint firstItem="NnX-AF-sl2" firstAttribute="leading" secondItem="iaD-S9-5AV" secondAttribute="leading" constant="-10" id="E5O-eg-ZJt"/>
+                                            <constraint firstItem="NnX-AF-sl2" firstAttribute="top" secondItem="iaD-S9-5AV" secondAttribute="bottom" constant="5" id="UQe-hb-dox"/>
+                                            <constraint firstAttribute="bottom" secondItem="NnX-AF-sl2" secondAttribute="bottom" id="Whn-bd-mIj"/>
+                                            <constraint firstItem="iaD-S9-5AV" firstAttribute="top" secondItem="5bI-Fr-he8" secondAttribute="top" id="sUT-Fr-don"/>
+                                            <constraint firstAttribute="trailing" secondItem="NnX-AF-sl2" secondAttribute="trailing" id="siN-0b-GnA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QF3-i4-USw">
+                                        <rect key="frame" x="209.5" y="0.0" width="189.5" height="145"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nQ-OE-sME" customClass="WalletRevenueItemView">
+                                                <rect key="frame" x="0.0" y="21" width="189.5" height="124"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lW-KP-9kF">
+                                                <rect key="frame" x="10" y="0.0" width="27" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2nQ-OE-sME" secondAttribute="trailing" id="EED-1f-IoQ"/>
+                                            <constraint firstItem="2nQ-OE-sME" firstAttribute="leading" secondItem="9lW-KP-9kF" secondAttribute="leading" constant="-10" id="OwF-0u-Cb9"/>
+                                            <constraint firstItem="2nQ-OE-sME" firstAttribute="leading" secondItem="QF3-i4-USw" secondAttribute="leading" id="Tds-ms-Sd2"/>
+                                            <constraint firstAttribute="bottom" secondItem="2nQ-OE-sME" secondAttribute="bottom" id="eMK-WJ-sej"/>
+                                            <constraint firstItem="9lW-KP-9kF" firstAttribute="top" secondItem="QF3-i4-USw" secondAttribute="top" id="ihZ-g3-leb"/>
+                                            <constraint firstItem="2nQ-OE-sME" firstAttribute="top" secondItem="9lW-KP-9kF" secondAttribute="bottom" constant="5" id="vyj-VY-nFE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QF3-i4-USw" firstAttribute="width" secondItem="5bI-Fr-he8" secondAttribute="width" id="L0e-1K-Tok"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jBc-Vi-DOf" firstAttribute="top" secondItem="vt2-Lz-TkO" secondAttribute="top" constant="15" id="1hY-54-7Us"/>
+                            <constraint firstAttribute="trailing" secondItem="jBc-Vi-DOf" secondAttribute="trailing" constant="20" id="RVe-dq-9VC"/>
+                            <constraint firstAttribute="bottom" secondItem="jBc-Vi-DOf" secondAttribute="bottom" constant="10" id="UIZ-Df-yMs"/>
+                            <constraint firstItem="jBc-Vi-DOf" firstAttribute="leading" secondItem="vt2-Lz-TkO" secondAttribute="leading" constant="20" id="cQF-75-Z7x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vt2-Lz-TkO" firstAttribute="top" secondItem="4wZ-Br-Jr6" secondAttribute="bottom" constant="10" id="7tb-wQ-r9H"/>
+                    <constraint firstAttribute="trailing" secondItem="vt2-Lz-TkO" secondAttribute="trailing" constant="10" id="97m-9x-Fre"/>
+                    <constraint firstItem="vt2-Lz-TkO" firstAttribute="leading" secondItem="4wZ-Br-Jr6" secondAttribute="leading" id="Kza-TQ-ZDi"/>
+                    <constraint firstAttribute="bottom" secondItem="vt2-Lz-TkO" secondAttribute="bottom" constant="10" id="UWc-aC-FZ6"/>
+                    <constraint firstItem="vt2-Lz-TkO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4wZ-Br-Jr6" secondAttribute="trailing" id="XGc-Xj-o4d"/>
+                    <constraint firstItem="vt2-Lz-TkO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iU3-f5-byA"/>
+                    <constraint firstItem="4wZ-Br-Jr6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="x7S-lX-ByT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="contentCarrier" destination="vt2-Lz-TkO" id="lar-aw-uWp"/>
+                <outlet property="incomeLabel" destination="4wZ-Br-Jr6" id="5Q9-x0-KeC"/>
+                <outlet property="profitCarrier" destination="QF3-i4-USw" id="5Ye-i7-t2l"/>
+                <outlet property="profitLabel" destination="9lW-KP-9kF" id="vGo-F5-hXE"/>
+                <outlet property="profitView" destination="2nQ-OE-sME" id="0Cq-yf-deH"/>
+                <outlet property="saleCarrier" destination="5bI-Fr-he8" id="C7W-Pd-cYg"/>
+                <outlet property="saleLabel" destination="iaD-S9-5AV" id="dfD-sw-e4Z"/>
+                <outlet property="saleView" destination="NnX-AF-sl2" id="C5j-f5-6o3"/>
+            </connections>
+            <point key="canvasLocation" x="-378.98550724637687" y="-63.616071428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

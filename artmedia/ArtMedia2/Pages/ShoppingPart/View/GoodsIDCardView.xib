@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GoodsIDCardView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZS-to-qUQ">
+                    <rect key="frame" x="20" y="246.5" width="374" height="232"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vZS-to-qUQ" secondAttribute="height" multiplier="335:208" id="2Kn-CR-OGD"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-fL-vmU">
+                    <rect key="frame" x="20" y="528.5" width="374" height="80"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-j5-p28">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZO-fz-tO8" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="微信" image="ic_wx">
+                                        <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToShareWX:" destination="iN0-l3-epB" eventType="touchUpInside" id="ynf-f9-yvB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfG-0l-nY1" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="249.5" y="0.0" width="124.5" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="保存本地" image="ic_save">
+                                        <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToSaveLocal:" destination="iN0-l3-epB" eventType="touchUpInside" id="UNS-wv-0zV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIL-C6-ehj" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="124.5" y="0.0" width="125" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="朋友圈" image="ic_wxf">
+                                        <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToShareWXF:" destination="iN0-l3-epB" eventType="touchUpInside" id="CUX-Su-i0R"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="cIL-C6-ehj" firstAttribute="top" secondItem="8dA-j5-p28" secondAttribute="top" id="1Iu-0W-kbV"/>
+                                <constraint firstItem="xfG-0l-nY1" firstAttribute="width" secondItem="0ZO-fz-tO8" secondAttribute="width" id="3P3-uO-BoN"/>
+                                <constraint firstItem="cIL-C6-ehj" firstAttribute="leading" secondItem="0ZO-fz-tO8" secondAttribute="trailing" id="91W-La-j1u"/>
+                                <constraint firstAttribute="bottom" secondItem="cIL-C6-ehj" secondAttribute="bottom" id="EWh-WE-3l6"/>
+                                <constraint firstItem="xfG-0l-nY1" firstAttribute="top" secondItem="8dA-j5-p28" secondAttribute="top" id="MF9-Kh-vmM"/>
+                                <constraint firstAttribute="bottom" secondItem="xfG-0l-nY1" secondAttribute="bottom" id="Ugs-Im-gYN"/>
+                                <constraint firstItem="0ZO-fz-tO8" firstAttribute="leading" secondItem="8dA-j5-p28" secondAttribute="leading" id="Zvl-3t-03Y"/>
+                                <constraint firstItem="cIL-C6-ehj" firstAttribute="width" secondItem="0ZO-fz-tO8" secondAttribute="width" id="eqt-de-CKo"/>
+                                <constraint firstItem="0ZO-fz-tO8" firstAttribute="top" secondItem="8dA-j5-p28" secondAttribute="top" id="evP-gK-FGn"/>
+                                <constraint firstAttribute="bottom" secondItem="0ZO-fz-tO8" secondAttribute="bottom" id="hQS-e2-gE9"/>
+                                <constraint firstAttribute="trailing" secondItem="xfG-0l-nY1" secondAttribute="trailing" id="kfE-Kh-KDW"/>
+                                <constraint firstItem="xfG-0l-nY1" firstAttribute="leading" secondItem="cIL-C6-ehj" secondAttribute="trailing" id="nQF-u8-MXg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="AaQ-gf-YmW"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHp-7a-kNn">
+                    <rect key="frame" x="185" y="652.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5x6-ZK-673"/>
+                        <constraint firstAttribute="width" secondItem="oHp-7a-kNn" secondAttribute="height" id="Icd-VD-N94"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_back"/>
+                    <connections>
+                        <action selector="clickToClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Sl-FI-8Ry"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eS3-fL-vmU" firstAttribute="top" secondItem="vZS-to-qUQ" secondAttribute="bottom" constant="50" id="77e-yw-VI5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vZS-to-qUQ" secondAttribute="trailing" constant="20" id="8XN-pQ-9Jp"/>
+                <constraint firstItem="eS3-fL-vmU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="AMw-cn-adE"/>
+                <constraint firstItem="vZS-to-qUQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="CPt-MZ-8ch"/>
+                <constraint firstItem="vZS-to-qUQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.8" id="GFV-hd-zYb"/>
+                <constraint firstItem="oHp-7a-kNn" firstAttribute="top" secondItem="eS3-fL-vmU" secondAttribute="bottom" constant="44" id="J9J-sa-Cam"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eS3-fL-vmU" secondAttribute="trailing" constant="20" id="JXV-wT-ydE"/>
+                <constraint firstItem="oHp-7a-kNn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QwF-cW-gfY"/>
+                <constraint firstItem="vZS-to-qUQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="m1X-4Q-44t"/>
+            </constraints>
+            <connections>
+                <outlet property="idcardIV" destination="vZS-to-qUQ" id="heB-dq-rfA"/>
+                <outlet property="saveLocalBtn" destination="xfG-0l-nY1" id="Xt7-4O-1H3"/>
+                <outlet property="stackView" destination="eS3-fL-vmU" id="g1X-RV-wBr"/>
+                <outlet property="wxBtn" destination="0ZO-fz-tO8" id="eeD-I7-S4E"/>
+                <outlet property="wxfBtn" destination="cIL-C6-ehj" id="Muv-ql-9Gr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0ZO-fz-tO8">
+            <size key="intrinsicContentSize" width="69" height="40"/>
+        </designable>
+        <designable name="cIL-C6-ehj">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="xfG-0l-nY1">
+            <size key="intrinsicContentSize" width="98" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_back" width="36.5" height="37"/>
+        <image name="ic_save" width="40" height="40"/>
+        <image name="ic_wx" width="40" height="40"/>
+        <image name="ic_wxf" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

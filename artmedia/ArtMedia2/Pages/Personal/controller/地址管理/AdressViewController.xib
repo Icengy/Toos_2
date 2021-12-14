@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdressViewController">
+            <connections>
+                <outlet property="addBtn" destination="VPN-0x-5DQ" id="Of5-yv-AK2"/>
+                <outlet property="tableView" destination="vp0-zi-MCn" id="twM-tJ-Qa8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="phZ-V1-d4g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vp0-zi-MCn" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPN-0x-5DQ" customClass="AMButton">
+                    <rect key="frame" x="15" y="812" width="384" height="40"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cOz-Ij-jgc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="添加新地址"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addBtnClick:" destination="-1" eventType="touchUpInside" id="dOd-RI-Kxj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="VPN-0x-5DQ" firstAttribute="top" secondItem="vp0-zi-MCn" secondAttribute="bottom" constant="10" id="7fu-ls-3FM"/>
+                <constraint firstItem="VPN-0x-5DQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="AXH-uD-rZ0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vp0-zi-MCn" secondAttribute="trailing" id="HlC-Ns-5ze"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VPN-0x-5DQ" secondAttribute="trailing" constant="15" id="YtB-Q5-kar"/>
+                <constraint firstItem="VPN-0x-5DQ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-10" id="a9P-9Y-j1z"/>
+                <constraint firstItem="vp0-zi-MCn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dGq-Pr-t2R"/>
+                <constraint firstItem="vp0-zi-MCn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="p2M-nK-uqV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

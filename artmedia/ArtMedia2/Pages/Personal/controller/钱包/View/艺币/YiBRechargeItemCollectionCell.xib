@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YiBRechargeItemCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0艺币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD7-fq-h7C">
+                        <rect key="frame" x="34" y="34" width="37.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-pa-JoI">
+                        <rect key="frame" x="42" y="56" width="21.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xD7-fq-h7C" firstAttribute="width" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="width" id="9Ze-L5-H0u"/>
+                <constraint firstAttribute="bottom" secondItem="xD7-fq-h7C" secondAttribute="bottom" multiplier="2" id="BdJ-4q-Tfw"/>
+                <constraint firstItem="hgV-pa-JoI" firstAttribute="top" secondItem="xD7-fq-h7C" secondAttribute="bottom" constant="5" id="QSh-nO-XSB"/>
+                <constraint firstItem="xD7-fq-h7C" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ebd-ir-5xU"/>
+                <constraint firstItem="hgV-pa-JoI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="oYf-wg-W1f"/>
+                <constraint firstItem="hgV-pa-JoI" firstAttribute="width" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="width" id="tmX-Sh-hLs"/>
+            </constraints>
+            <size key="customSize" width="105" height="102"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="RMBLabel" destination="hgV-pa-JoI" id="XN4-AY-9Pg"/>
+                <outlet property="YBLabel" destination="xD7-fq-h7C" id="BJC-eg-ncr"/>
+            </connections>
+            <point key="canvasLocation" x="-136" y="80"/>
+        </collectionViewCell>
+    </objects>
+</document>

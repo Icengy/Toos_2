@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="158" id="KGk-i7-Jjw" customClass="OrderGoodsIntroCell">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuB-NT-eNr">
+                        <rect key="frame" x="15" y="0.0" width="353" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Agf-dX-fxA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.47843137254901957" green="0.50588235294117645" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K08-9X-T4M">
+                        <rect key="frame" x="118" y="52" width="250" height="53.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tze-7O-rFW">
+                        <rect key="frame" x="15" y="52" width="88" height="88"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Tze-7O-rFW" secondAttribute="height" id="A3L-1b-dT8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MU-xp-pIK">
+                        <rect key="frame" x="118" y="113.5" width="162" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.63137254901960782" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VT-ls-ewS" customClass="AMButton">
+                        <rect key="frame" x="288" y="113.5" width="80" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2HH-oG-Thh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="申请退货">
+                            <color key="titleColor" red="0.52941176470588236" green="0.54117647058823526" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickToRefund:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Klu-Fd-dln"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TuB-NT-eNr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0VO-yl-A87"/>
+                    <constraint firstItem="1VT-ls-ewS" firstAttribute="centerY" secondItem="3MU-xp-pIK" secondAttribute="centerY" id="2e8-GJ-DGb"/>
+                    <constraint firstItem="1VT-ls-ewS" firstAttribute="height" secondItem="3MU-xp-pIK" secondAttribute="height" id="4I2-W0-vAq"/>
+                    <constraint firstItem="1VT-ls-ewS" firstAttribute="leading" secondItem="3MU-xp-pIK" secondAttribute="trailing" constant="8" id="4QV-wl-IuF"/>
+                    <constraint firstItem="Tze-7O-rFW" firstAttribute="height" secondItem="TuB-NT-eNr" secondAttribute="height" multiplier="2" id="70y-F2-blz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Tze-7O-rFW" secondAttribute="bottom" constant="15" id="Avb-mr-YJh"/>
+                    <constraint firstItem="Tze-7O-rFW" firstAttribute="leading" secondItem="TuB-NT-eNr" secondAttribute="leading" id="BBj-J9-KX6"/>
+                    <constraint firstItem="3MU-xp-pIK" firstAttribute="height" secondItem="K08-9X-T4M" secondAttribute="height" multiplier="1:2" id="FvE-z9-kfD"/>
+                    <constraint firstItem="3MU-xp-pIK" firstAttribute="leading" secondItem="K08-9X-T4M" secondAttribute="leading" id="JN8-H8-LG5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K08-9X-T4M" secondAttribute="trailing" id="RzD-HC-1BX"/>
+                    <constraint firstItem="K08-9X-T4M" firstAttribute="top" secondItem="Tze-7O-rFW" secondAttribute="top" id="SaO-rW-FgB"/>
+                    <constraint firstItem="3MU-xp-pIK" firstAttribute="top" secondItem="K08-9X-T4M" secondAttribute="bottom" constant="8" id="TYL-yh-Sht"/>
+                    <constraint firstItem="TuB-NT-eNr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="U1B-Df-KKi"/>
+                    <constraint firstItem="Tze-7O-rFW" firstAttribute="top" secondItem="TuB-NT-eNr" secondAttribute="bottom" constant="8" id="Vfj-8A-4dF"/>
+                    <constraint firstAttribute="trailing" secondItem="TuB-NT-eNr" secondAttribute="trailing" constant="15" id="ha3-OG-eei"/>
+                    <constraint firstItem="3MU-xp-pIK" firstAttribute="bottom" secondItem="Tze-7O-rFW" secondAttribute="bottom" id="t9r-Ni-bOO"/>
+                    <constraint firstItem="1VT-ls-ewS" firstAttribute="trailing" secondItem="K08-9X-T4M" secondAttribute="trailing" id="tUw-wU-Jn7"/>
+                    <constraint firstItem="K08-9X-T4M" firstAttribute="leading" secondItem="Tze-7O-rFW" secondAttribute="trailing" constant="15" id="y61-VF-zkg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="authorLabel" destination="3MU-xp-pIK" id="F19-qH-dlg"/>
+                <outlet property="goodsIV" destination="Tze-7O-rFW" id="yPx-r1-Ofd"/>
+                <outlet property="goodsNameLabel" destination="K08-9X-T4M" id="j1N-SD-JFy"/>
+                <outlet property="refundBtn" destination="1VT-ls-ewS" id="Wyt-DH-iNQ"/>
+                <outlet property="refundWidthContstraint" destination="2HH-oG-Thh" id="YBe-Oh-a7R"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="80"/>
+        </tableViewCell>
+    </objects>
+</document>

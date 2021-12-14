@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyInviterItemFillView">
+            <connections>
+                <outlet property="inputTF" destination="Thh-HW-WoH" id="XoH-Vd-M3S"/>
+                <outlet property="view" destination="Fkn-WB-5FF" id="PgF-ko-JYy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Fkn-WB-5FF">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入对方的邀请码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-HW-WoH" customClass="AMTextField">
+                    <rect key="frame" x="0.0" y="0.0" width="422" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="YZd-Y2-5P4"/>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Thh-HW-WoH" firstAttribute="leading" secondItem="Fkn-WB-5FF" secondAttribute="leading" id="5ah-Xj-zOc"/>
+                <constraint firstItem="Thh-HW-WoH" firstAttribute="top" secondItem="Fkn-WB-5FF" secondAttribute="top" id="9Yy-MM-VU0"/>
+                <constraint firstAttribute="bottom" secondItem="Thh-HW-WoH" secondAttribute="bottom" id="Sxr-g2-m63"/>
+                <constraint firstAttribute="trailing" secondItem="Thh-HW-WoH" secondAttribute="trailing" id="zPf-1z-Mxr"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-238" y="52"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Thh-HW-WoH">
+            <size key="intrinsicContentSize" width="138" height="19.5"/>
+        </designable>
+    </designables>
+</document>

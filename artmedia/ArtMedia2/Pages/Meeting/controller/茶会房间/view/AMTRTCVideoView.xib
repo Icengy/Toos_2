@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AMTRTCVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="471"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quH-I0-SJw">
+                    <rect key="frame" x="5" y="11" width="0.0" height="18"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会主" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-2s-3ID" customClass="AMTRTCVideoTagLabel">
+                            <color key="backgroundColor" red="0.8862745098" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RJW-2s-3ID" secondAttribute="height" multiplier="2" id="JCj-UB-Nfv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8e-ST-fl9" customClass="AMTRTCVideoTagLabel">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="f8e-ST-fl9" secondAttribute="height" multiplier="2" id="sBY-Tp-3hK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="M0A-DT-xlO"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-qX-Nhh">
+                    <rect key="frame" x="261" y="431" width="80" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-Tk-7n2" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <state key="normal" image="meetingroom-microphone-white"/>
+                            <state key="selected" image="meetingroom-microphone_off"/>
+                            <connections>
+                                <action selector="onBtnMuteAudioClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="aiA-UI-vPl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In9-ma-njE" customClass="AMButton">
+                            <rect key="frame" x="40" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YUa-x3-mlc"/>
+                                <constraint firstAttribute="width" secondItem="In9-ma-njE" secondAttribute="height" id="pM4-2u-i8C"/>
+                            </constraints>
+                            <state key="normal" image="meetingroom-camera-white"/>
+                            <state key="selected" image="meetingroom-camera_off"/>
+                            <connections>
+                                <action selector="onBtnMuteVideoClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dvj-Um-sPV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="In9-ma-njE" firstAttribute="width" secondItem="pWd-Tk-7n2" secondAttribute="width" id="0Gs-sm-yxF"/>
+                        <constraint firstItem="In9-ma-njE" firstAttribute="height" secondItem="pWd-Tk-7n2" secondAttribute="height" id="GAD-Ex-Sxi"/>
+                    </constraints>
+                </stackView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXc-mo-LnM">
+                    <rect key="frame" x="10" y="431" width="28.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8hT-RW-PcW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-cd-SEe" customClass="AMButton">
+                    <rect key="frame" x="321" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="X3M-cd-SEe" secondAttribute="height" id="Gsv-1v-ZKy"/>
+                        <constraint firstAttribute="height" constant="20" id="mOn-3Q-gwE"/>
+                    </constraints>
+                    <state key="normal" image="meetingroom-信号-1"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kXc-mo-LnM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4sl-jo-OLd"/>
+                <constraint firstItem="X3M-cd-SEe" firstAttribute="centerY" secondItem="quH-I0-SJw" secondAttribute="centerY" id="8XU-G1-0il"/>
+                <constraint firstAttribute="trailing" secondItem="1eB-qX-Nhh" secondAttribute="trailing" constant="10" id="8uw-Ru-pE1"/>
+                <constraint firstItem="1eB-qX-Nhh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kXc-mo-LnM" secondAttribute="trailing" constant="10" id="CxD-3g-Nyl"/>
+                <constraint firstAttribute="bottom" secondItem="1eB-qX-Nhh" secondAttribute="bottom" id="e6l-ou-GjU"/>
+                <constraint firstItem="X3M-cd-SEe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="meB-H2-Wli"/>
+                <constraint firstItem="quH-I0-SJw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="sTa-Ls-So5"/>
+                <constraint firstAttribute="bottom" secondItem="kXc-mo-LnM" secondAttribute="bottom" id="sk0-vk-RfA"/>
+                <constraint firstAttribute="trailing" secondItem="X3M-cd-SEe" secondAttribute="trailing" constant="10" id="tO4-u7-wHj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="audioBtn" destination="pWd-Tk-7n2" id="O6M-E4-Gfk"/>
+                <outlet property="buttonStackView" destination="1eB-qX-Nhh" id="gks-o8-Cca"/>
+                <outlet property="masterTag" destination="RJW-2s-3ID" id="SFd-hV-m4d"/>
+                <outlet property="nameLabel" destination="kXc-mo-LnM" id="kvJ-vE-AGC"/>
+                <outlet property="networkIdent" destination="X3M-cd-SEe" id="xFs-6V-ywc"/>
+                <outlet property="selfTag" destination="f8e-ST-fl9" id="Aon-gh-I68"/>
+                <outlet property="tagStackView" destination="quH-I0-SJw" id="dsg-1M-T1i"/>
+                <outlet property="videoBtn" destination="In9-ma-njE" id="juo-D4-yVy"/>
+            </connections>
+            <point key="canvasLocation" x="55.797101449275367" y="-22.433035714285712"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="meetingroom-camera-white" width="25" height="25"/>
+        <image name="meetingroom-camera_off" width="23" height="23"/>
+        <image name="meetingroom-microphone-white" width="25" height="25"/>
+        <image name="meetingroom-microphone_off" width="23" height="23"/>
+        <image name="meetingroom-信号-1" width="23" height="20"/>
+    </resources>
+</document>

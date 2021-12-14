@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="AuctionSpecialDetailInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新中式-书房书桌字画毛笔茶具玉玺香炉镇尺" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-vH-2se">
+                        <rect key="frame" x="14" y="15" width="351" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="n0k-Ko-S5M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_clock" translatesAutoresizingMaskIntoConstraints="NO" id="acL-tx-7gY">
+                        <rect key="frame" x="14" y="53.5" width="14" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4ti-3M-c9C"/>
+                            <constraint firstAttribute="width" constant="14" id="9gh-Pb-wP6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="直播时间：2020年12月1日 15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-m9-msh">
+                        <rect key="frame" x="33" y="45" width="332" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="lFf-rm-0Nw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.8784313725490196" green="0.32156862745098036" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他当然知道还存在其他形式的思想和知识，对它们也并不陌生可是它们都算不上科学，因此不值得重视。他虽然是个无神论者却容忍了宗教" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-79-COc">
+                        <rect key="frame" x="14" y="75" width="351" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qyg-7Y-FHt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W1T-m9-msh" firstAttribute="leading" secondItem="acL-tx-7gY" secondAttribute="trailing" constant="5" id="0s4-eK-cug"/>
+                    <constraint firstItem="W1T-m9-msh" firstAttribute="centerY" secondItem="acL-tx-7gY" secondAttribute="centerY" multiplier="0.98" id="I6c-Jf-71D"/>
+                    <constraint firstAttribute="trailing" secondItem="W1T-m9-msh" secondAttribute="trailing" constant="14" id="RBX-yU-w6g"/>
+                    <constraint firstAttribute="trailing" secondItem="xqc-79-COc" secondAttribute="trailing" constant="14" id="TAA-GB-znC"/>
+                    <constraint firstItem="xqc-79-COc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Yf9-b6-PTr"/>
+                    <constraint firstAttribute="trailing" secondItem="qyh-vH-2se" secondAttribute="trailing" constant="14" id="aPV-xw-Ivl"/>
+                    <constraint firstItem="qyh-vH-2se" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="dxg-zY-f0Z"/>
+                    <constraint firstItem="xqc-79-COc" firstAttribute="top" secondItem="W1T-m9-msh" secondAttribute="bottom" id="g8d-6y-5Op"/>
+                    <constraint firstItem="acL-tx-7gY" firstAttribute="leading" secondItem="qyh-vH-2se" secondAttribute="leading" id="goQ-KC-Nzf"/>
+                    <constraint firstItem="W1T-m9-msh" firstAttribute="top" secondItem="qyh-vH-2se" secondAttribute="bottom" id="kkj-xZ-Eet"/>
+                    <constraint firstAttribute="bottom" secondItem="xqc-79-COc" secondAttribute="bottom" constant="25" id="pQC-OY-40P"/>
+                    <constraint firstItem="qyh-vH-2se" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="uZV-CG-Pqk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentLabel" destination="xqc-79-COc" id="sE0-Zs-db6"/>
+                <outlet property="timeLabel" destination="W1T-m9-msh" id="gwD-i2-Q6c"/>
+                <outlet property="titleLabel" destination="qyh-vH-2se" id="OZb-or-kuP"/>
+            </connections>
+            <point key="canvasLocation" x="-209.42028985507247" y="176.45089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="time_clock" width="14" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TOCropRatioSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t83-uZ-eap">
+                    <rect key="frame" x="0.0" y="787" width="414" height="109"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWH-f3-XMY">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                            <subviews>
+                                <button opaque="NO" tag="2020102917100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw9-Eu-Ile" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="1:1" image="ratio_1:1_normal">
+                                        <color key="titleColor" red="0.26666666666666666" green="0.27058823529411763" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title="1:1" image="ratio_1:1_select">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="jQL-Us-LbP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2020102917101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-Yk-aTE" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="4:3" image="ratio_4:3_normal">
+                                        <color key="titleColor" red="0.2666666667" green="0.27058823529999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title="4:3" image="ratio_4:3_select">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="5vs-pU-iDc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2020102917102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-xQ-gra" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="207" y="0.0" width="103.5" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="3:4" image="ratio_3:4_normal">
+                                        <color key="titleColor" red="0.2666666667" green="0.27058823529999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title="3:4" image="ratio_3:4_select">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yca-wU-9Ha"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2020102917103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jze-bm-K7u" customClass="PersonalMenuItemButton">
+                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="16:9" image="ratio_16:9_normal">
+                                        <color key="titleColor" red="0.2666666667" green="0.27058823529999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title="16:9" image="ratio_16:9_select">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickToChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="5u7-T6-qUR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="CNa-Yk-aTE" firstAttribute="width" secondItem="Gw9-Eu-Ile" secondAttribute="width" id="HfJ-ax-cti"/>
+                                <constraint firstItem="3JH-xQ-gra" firstAttribute="width" secondItem="Gw9-Eu-Ile" secondAttribute="width" id="WNy-sr-TK5"/>
+                                <constraint firstAttribute="height" constant="75" id="XFe-tQ-keZ"/>
+                                <constraint firstItem="Jze-bm-K7u" firstAttribute="width" secondItem="Gw9-Eu-Ile" secondAttribute="width" id="dPe-mR-Mrd"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="QbS-gP-JcA"/>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.086274509803921567" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="RWH-f3-XMY" firstAttribute="top" secondItem="QbS-gP-JcA" secondAttribute="top" id="1Bv-0w-Qsq"/>
+                        <constraint firstItem="QbS-gP-JcA" firstAttribute="bottom" secondItem="RWH-f3-XMY" secondAttribute="bottom" id="TOy-he-zJc"/>
+                        <constraint firstItem="RWH-f3-XMY" firstAttribute="leading" secondItem="QbS-gP-JcA" secondAttribute="leading" id="fiq-N0-rtF"/>
+                        <constraint firstItem="QbS-gP-JcA" firstAttribute="trailing" secondItem="RWH-f3-XMY" secondAttribute="trailing" id="k6x-ah-dae"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="t83-uZ-eap" secondAttribute="bottom" id="5ab-gX-ajL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t83-uZ-eap" secondAttribute="trailing" id="9ys-7N-twS"/>
+                <constraint firstItem="t83-uZ-eap" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wfu-ik-dQH"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="t83-uZ-eap" id="EUJ-QV-8ng"/>
+                <outlet property="stackView" destination="RWH-f3-XMY" id="dxz-wM-LmZ"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3JH-xQ-gra">
+            <size key="intrinsicContentSize" width="37" height="20"/>
+        </designable>
+        <designable name="CNa-Yk-aTE">
+            <size key="intrinsicContentSize" width="42" height="17"/>
+        </designable>
+        <designable name="Gw9-Eu-Ile">
+            <size key="intrinsicContentSize" width="37" height="20"/>
+        </designable>
+        <designable name="Jze-bm-K7u">
+            <size key="intrinsicContentSize" width="48" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ratio_16:9_normal" width="20" height="9"/>
+        <image name="ratio_16:9_select" width="20" height="9"/>
+        <image name="ratio_1:1_normal" width="20" height="20"/>
+        <image name="ratio_1:1_select" width="20" height="20"/>
+        <image name="ratio_3:4_normal" width="15" height="20"/>
+        <image name="ratio_3:4_select" width="15" height="20"/>
+        <image name="ratio_4:3_normal" width="20" height="15"/>
+        <image name="ratio_4:3_select" width="20" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="MineOrderItemTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-8L-N4y">
+                        <rect key="frame" x="15" y="11" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5am-pY-I60" customClass="AMReverseButton">
+                        <rect key="frame" x="361" y="0.0" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5am-pY-I60" secondAttribute="height" multiplier="2" id="Gu8-3v-7HP"/>
+                            <constraint firstAttribute="height" constant="40" id="VRt-Vr-IFH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="全部" image="mine_right_aw">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickToAll:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mfy-ms-Gfd"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooY-k9-Ki2">
+                        <rect key="frame" x="0.0" y="40" width="456" height="75"/>
+                        <subviews>
+                            <button opaque="NO" tag="2020900" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNI-yz-skk" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="0.0" y="0.0" width="91" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="待付款" image="mine_待付款">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToStatus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tYf-D6-M9Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020901" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-X2-q69" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="91" y="0.0" width="91.5" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="待发货" image="mine_待发货">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToStatus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TJB-8H-s1W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020902" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsA-8r-Qdu" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="182.5" y="0.0" width="91" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="待收货" image="mine_待收货">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToStatus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yNf-dA-2nc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020903" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-vF-9wc" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="273.5" y="0.0" width="91.5" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="已完成" image="mine_已完成">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToStatus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zHx-vh-oXc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020904" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Oq-EN-6rC" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="365" y="0.0" width="91" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="退货" image="mine_退货">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToStatus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZjM-Gg-Mek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Oq-EN-6rC" firstAttribute="width" secondItem="iNI-yz-skk" secondAttribute="width" id="0BX-vm-KTz"/>
+                            <constraint firstAttribute="height" constant="75" id="1fF-7K-89F"/>
+                            <constraint firstItem="UsA-8r-Qdu" firstAttribute="width" secondItem="iNI-yz-skk" secondAttribute="width" id="DL1-4w-Hz3"/>
+                            <constraint firstItem="SXm-vF-9wc" firstAttribute="width" secondItem="iNI-yz-skk" secondAttribute="width" id="QwE-MG-WlK"/>
+                            <constraint firstItem="gD9-X2-q69" firstAttribute="width" secondItem="iNI-yz-skk" secondAttribute="width" id="gzB-gC-bEL"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ooY-k9-Ki2" firstAttribute="top" secondItem="5am-pY-I60" secondAttribute="bottom" id="Bnc-Tz-o7g"/>
+                    <constraint firstItem="Bif-8L-N4y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="D2P-Di-z1y"/>
+                    <constraint firstItem="5am-pY-I60" firstAttribute="centerY" secondItem="Bif-8L-N4y" secondAttribute="centerY" id="L1A-DE-3CD"/>
+                    <constraint firstItem="5am-pY-I60" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b7B-a3-Cqu"/>
+                    <constraint firstItem="ooY-k9-Ki2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bwX-75-SAO"/>
+                    <constraint firstAttribute="trailing" secondItem="5am-pY-I60" secondAttribute="trailing" constant="15" id="pOI-SV-294"/>
+                    <constraint firstAttribute="trailing" secondItem="ooY-k9-Ki2" secondAttribute="trailing" id="xof-Ju-lv6"/>
+                    <constraint firstAttribute="bottom" secondItem="ooY-k9-Ki2" secondAttribute="bottom" id="yxN-7x-FIP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="allBtn" destination="5am-pY-I60" id="Mrf-SM-1KM"/>
+                <outlet property="daifahuo_btn" destination="gD9-X2-q69" id="eKx-dG-V2F"/>
+                <outlet property="daifukuan_btn" destination="iNI-yz-skk" id="KLs-n5-wEl"/>
+                <outlet property="daishouhuo_btn" destination="UsA-8r-Qdu" id="6tl-x1-GBB"/>
+                <outlet property="orderTitleLabel" destination="Bif-8L-N4y" id="Ctj-zz-JNb"/>
+                <outlet property="stackView" destination="ooY-k9-Ki2" id="3Uj-Ax-Ab1"/>
+                <outlet property="tuihuo_btn" destination="6Oq-EN-6rC" id="d1v-dI-SDS"/>
+                <outlet property="yiwancheng_btn" destination="SXm-vF-9wc" id="erP-Mu-FAd"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="58.258928571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="5am-pY-I60">
+            <size key="intrinsicContentSize" width="33" height="16"/>
+        </designable>
+        <designable name="6Oq-EN-6rC">
+            <size key="intrinsicContentSize" width="52" height="25"/>
+        </designable>
+        <designable name="SXm-vF-9wc">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+        <designable name="UsA-8r-Qdu">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+        <designable name="gD9-X2-q69">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+        <designable name="iNI-yz-skk">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="mine_right_aw" width="6" height="12"/>
+        <image name="mine_已完成" width="25" height="25"/>
+        <image name="mine_待付款" width="25" height="25"/>
+        <image name="mine_待发货" width="25" height="25"/>
+        <image name="mine_待收货" width="25" height="25"/>
+        <image name="mine_退货" width="25" height="25"/>
+    </resources>
+</document>

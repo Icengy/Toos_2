@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AMMeetingSettingBondCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥0/人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV8-Il-HLi" customClass="AMMeetingSettingBondLabel">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meeting-保证金选中" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-Gn-Ian">
+                        <rect key="frame" x="172.5" y="45.5" width="49.5" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="n8r-Gn-Ian" secondAttribute="height" multiplier="76:30" id="uiL-IU-0jR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SV8-Il-HLi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ETn-3x-MjI"/>
+                <constraint firstAttribute="bottom" secondItem="n8r-Gn-Ian" secondAttribute="bottom" id="lb0-xY-l4e"/>
+                <constraint firstItem="n8r-Gn-Ian" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.3" id="nDc-AE-ceq"/>
+                <constraint firstAttribute="bottom" secondItem="SV8-Il-HLi" secondAttribute="bottom" id="rkA-jk-mwC"/>
+                <constraint firstAttribute="trailing" secondItem="n8r-Gn-Ian" secondAttribute="trailing" id="sV7-5R-jxf"/>
+                <constraint firstItem="SV8-Il-HLi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vs7-4C-RZi"/>
+                <constraint firstAttribute="trailing" secondItem="SV8-Il-HLi" secondAttribute="trailing" id="wrZ-Vm-yIt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="222" height="65"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bondLabel" destination="SV8-Il-HLi" id="G8f-fm-mSL"/>
+                <outlet property="markIV" destination="n8r-Gn-Ian" id="vne-r0-e7D"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="119.53125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="meeting-保证金选中" width="38" height="15"/>
+    </resources>
+</document>

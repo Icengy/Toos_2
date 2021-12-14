@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceivableListViewController">
+            <connections>
+                <outlet property="confirmButton" destination="Klw-p8-wRC" id="Ejt-LG-ztt"/>
+                <outlet property="layoutTV" destination="9We-ja-fan" id="XFS-1C-jln"/>
+                <outlet property="tipsBottomConstraint" destination="ncd-0g-pDP" id="18b-MP-hBe"/>
+                <outlet property="tipsLabel" destination="IKC-Uj-vyo" id="TyE-a1-7jc"/>
+                <outlet property="tipsTopConstraint" destination="Jjm-AZ-MPj" id="9t9-oK-MXD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9We-ja-fan" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klw-p8-wRC" customClass="AMButton">
+                    <rect key="frame" x="15" y="728" width="345" height="40"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LqP-ko-M1b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确认提现">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickToConfirm:" destination="-1" eventType="touchUpInside" id="WLV-ne-7Df"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKC-Uj-vyo">
+                    <rect key="frame" x="15" y="44" width="345" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.47843137254901957" green="0.50588235294117645" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="IKC-Uj-vyo" secondAttribute="trailing" constant="15" id="3qx-sH-Caj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9We-ja-fan" secondAttribute="trailing" id="CtZ-gY-984"/>
+                <constraint firstItem="IKC-Uj-vyo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Jjm-AZ-MPj"/>
+                <constraint firstItem="Klw-p8-wRC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="PMI-mO-dyK"/>
+                <constraint firstAttribute="bottom" secondItem="9We-ja-fan" secondAttribute="bottom" id="dJM-Fn-cHl"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Klw-p8-wRC" secondAttribute="bottom" constant="10" id="kmm-Ht-dvf"/>
+                <constraint firstItem="IKC-Uj-vyo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="m2t-cj-WsU"/>
+                <constraint firstItem="9We-ja-fan" firstAttribute="top" secondItem="IKC-Uj-vyo" secondAttribute="bottom" id="ncd-0g-pDP"/>
+                <constraint firstItem="9We-ja-fan" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qQv-QO-sk9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Klw-p8-wRC" secondAttribute="trailing" constant="15" id="w50-ZI-Vhy"/>
+                <constraint firstItem="Klw-p8-wRC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wgX-Oi-aYX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.21674876847291"/>
+        </view>
+    </objects>
+</document>

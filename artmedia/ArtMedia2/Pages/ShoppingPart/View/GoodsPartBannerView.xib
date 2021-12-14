@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GoodsPartBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="334"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxL-3a-rSW" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="445" height="334"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="渐变-2" translatesAutoresizingMaskIntoConstraints="NO" id="QIb-lK-yyX">
+                    <rect key="frame" x="0.0" y="0.0" width="445" height="167"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m9J-ho-wan">
+                    <rect key="frame" x="278" y="20" width="152" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-EJ-pUH" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <state key="normal" image="share_white"/>
+                            <connections>
+                                <action selector="clickToShare:" destination="iN0-l3-epB" eventType="touchUpInside" id="0vS-26-iLJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7W-6b-tPX" customClass="AMButton">
+                            <rect key="frame" x="54" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="h7W-6b-tPX" secondAttribute="height" id="q3i-II-cBv"/>
+                            </constraints>
+                            <state key="normal" image="goodsIDCard_White"/>
+                            <connections>
+                                <action selector="clickToIDCard:" destination="iN0-l3-epB" eventType="touchUpInside" id="aMp-c9-95s"/>
+                                <action selector="clickToShare:" destination="iN0-l3-epB" eventType="touchUpInside" id="7fg-a8-Yuf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-4G-oTE" customClass="AMButton">
+                            <rect key="frame" x="108" y="0.0" width="44" height="44"/>
+                            <state key="normal" image="goodsEdit_White"/>
+                            <connections>
+                                <action selector="clickToEdit:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vdb-it-QHd"/>
+                                <action selector="clickToIDCard:" destination="iN0-l3-epB" eventType="touchUpInside" id="jW2-dG-nxq"/>
+                                <action selector="clickToShare:" destination="iN0-l3-epB" eventType="touchUpInside" id="JBC-o5-Xkz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rFa-EJ-pUH" firstAttribute="width" secondItem="rFa-EJ-pUH" secondAttribute="height" id="O4M-4u-DlM"/>
+                        <constraint firstItem="dt2-4G-oTE" firstAttribute="width" secondItem="dt2-4G-oTE" secondAttribute="height" id="xlR-7A-veu"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zj-cc-gLM" customClass="AMButton">
+                    <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="089-Hl-qWb"/>
+                        <constraint firstAttribute="width" secondItem="3Zj-cc-gLM" secondAttribute="height" id="zM5-LT-HkX"/>
+                    </constraints>
+                    <state key="normal" image="backwhite"/>
+                    <connections>
+                        <action selector="clickToBack:" destination="iN0-l3-epB" eventType="touchUpInside" id="4BF-ac-2jw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6j-qd-grc">
+                    <rect key="frame" x="375" y="300" width="60" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="K6j-qd-grc" secondAttribute="height" multiplier="2.5" id="f6t-O4-Url"/>
+                        <constraint firstAttribute="height" constant="24" id="r1r-5G-icp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VxL-3a-rSW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6yF-0p-yhx"/>
+                <constraint firstItem="QIb-lK-yyX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bbp-93-M0L"/>
+                <constraint firstAttribute="bottom" secondItem="K6j-qd-grc" secondAttribute="bottom" constant="10" id="CDx-xS-afQ"/>
+                <constraint firstItem="VxL-3a-rSW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MDa-7q-yFC"/>
+                <constraint firstAttribute="bottom" secondItem="VxL-3a-rSW" secondAttribute="bottom" id="OIk-gw-eDk"/>
+                <constraint firstItem="m9J-ho-wan" firstAttribute="centerY" secondItem="3Zj-cc-gLM" secondAttribute="centerY" id="OdS-hK-lTF"/>
+                <constraint firstItem="VxL-3a-rSW" firstAttribute="leading" secondItem="3Zj-cc-gLM" secondAttribute="leading" id="U9U-lB-mJC"/>
+                <constraint firstItem="QIb-lK-yyX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uub-6d-RJG"/>
+                <constraint firstItem="QIb-lK-yyX" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="WDU-JK-1Mb"/>
+                <constraint firstAttribute="trailing" secondItem="VxL-3a-rSW" secondAttribute="trailing" id="XkH-6X-hch"/>
+                <constraint firstAttribute="trailing" secondItem="QIb-lK-yyX" secondAttribute="trailing" id="adF-Yk-BWH"/>
+                <constraint firstAttribute="trailing" secondItem="K6j-qd-grc" secondAttribute="trailing" constant="10" id="fEg-Eg-kBT"/>
+                <constraint firstItem="m9J-ho-wan" firstAttribute="height" secondItem="3Zj-cc-gLM" secondAttribute="height" id="iGr-hP-wAI"/>
+                <constraint firstItem="3Zj-cc-gLM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="uSo-dP-tfY"/>
+                <constraint firstItem="m9J-ho-wan" firstAttribute="trailing" secondItem="VxL-3a-rSW" secondAttribute="trailing" constant="-15" id="x02-gy-9U4"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerView" destination="VxL-3a-rSW" id="ksF-WW-74k"/>
+                <outlet property="btn_top_constraint" destination="uSo-dP-tfY" id="mLD-vf-Vuc"/>
+                <outlet property="editBtn" destination="dt2-4G-oTE" id="aQB-OE-X7D"/>
+                <outlet property="sortLabel" destination="K6j-qd-grc" id="iuf-dz-0Jb"/>
+            </connections>
+            <point key="canvasLocation" x="90.579710144927546" y="22.767857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3Zj-cc-gLM">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+        <designable name="dt2-4G-oTE">
+            <size key="intrinsicContentSize" width="29" height="23"/>
+        </designable>
+        <designable name="h7W-6b-tPX">
+            <size key="intrinsicContentSize" width="29" height="23"/>
+        </designable>
+        <designable name="rFa-EJ-pUH">
+            <size key="intrinsicContentSize" width="22" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="backwhite" width="12" height="21"/>
+        <image name="goodsEdit_White" width="29" height="23"/>
+        <image name="goodsIDCard_White" width="29" height="23"/>
+        <image name="share_white" width="22" height="22"/>
+        <image name="渐变-2" width="1" height="556"/>
+    </resources>
+</document>

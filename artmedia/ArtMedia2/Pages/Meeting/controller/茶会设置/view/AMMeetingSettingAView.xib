@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMeetingSettingAView">
+            <connections>
+                <outlet property="openBtn" destination="aGk-bb-hah" id="CVh-vc-6Ba"/>
+                <outlet property="titleLabel" destination="2MG-Oq-Gws" id="JqT-qj-Lhi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sYU-5M-tQ7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="约见功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MG-Oq-Gws">
+                    <rect key="frame" x="15" y="0.0" width="57.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="aXV-rG-BeI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-bb-hah" customClass="AMReverseButton">
+                    <rect key="frame" x="356" y="16" width="73" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="未开启" image="switch_close">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="已开启" image="switch_open">
+                        <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickToOpen:" destination="-1" eventType="touchUpInside" id="YgE-zU-rWC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aGk-bb-hah" secondAttribute="trailing" constant="15" id="HVv-Ad-JOM"/>
+                <constraint firstAttribute="bottom" secondItem="2MG-Oq-Gws" secondAttribute="bottom" id="QkM-Pz-Btb"/>
+                <constraint firstItem="2MG-Oq-Gws" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WP2-5h-mpr"/>
+                <constraint firstItem="2MG-Oq-Gws" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="byB-2Q-Hjq"/>
+                <constraint firstItem="aGk-bb-hah" firstAttribute="centerY" secondItem="2MG-Oq-Gws" secondAttribute="centerY" id="ykf-9N-CzD"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="159.42028985507247" y="-129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="switch_close" width="36" height="18"/>
+        <image name="switch_open" width="36" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

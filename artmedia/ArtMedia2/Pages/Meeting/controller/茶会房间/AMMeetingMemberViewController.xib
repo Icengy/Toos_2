@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMeetingMemberViewController">
+            <connections>
+                <outlet property="contentView" destination="rYv-tB-NBo" id="jZs-C1-PeQ"/>
+                <outlet property="headerView" destination="63K-dk-zma" id="Maw-Zi-JN4"/>
+                <outlet property="numLabel" destination="Smu-ee-yDw" id="SRS-xn-kV2"/>
+                <outlet property="tableView" destination="1HB-E8-7yv" id="xGk-pJ-LNa"/>
+                <outlet property="titleLabel" destination="Dmb-DB-qYD" id="8US-fa-Kvu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYv-tB-NBo">
+                    <rect key="frame" x="0.0" y="224" width="414" height="672"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63K-dk-zma">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会客管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmb-DB-qYD">
+                                    <rect key="frame" x="15" y="8.5" width="74" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-tz-MeL">
+                                    <rect key="frame" x="355" y="8" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="bTg-tz-MeL" secondAttribute="height" multiplier="1:1" id="WLi-BZ-Kc8"/>
+                                        <constraint firstAttribute="height" constant="44" id="hEr-67-kmW"/>
+                                    </constraints>
+                                    <state key="normal" image="meetingroom-close"/>
+                                    <connections>
+                                        <action selector="clickToClose:" destination="-1" eventType="touchUpInside" id="5gZ-5u-SOi"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前人数：0人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smu-ee-yDw">
+                                    <rect key="frame" x="15" y="34" width="88" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Smu-ee-yDw" firstAttribute="top" secondItem="Dmb-DB-qYD" secondAttribute="bottom" constant="4" id="4bp-tz-lBQ"/>
+                                <constraint firstItem="Dmb-DB-qYD" firstAttribute="leading" secondItem="63K-dk-zma" secondAttribute="leading" constant="15" id="LNL-U6-pLw"/>
+                                <constraint firstItem="Smu-ee-yDw" firstAttribute="leading" secondItem="Dmb-DB-qYD" secondAttribute="leading" id="Pti-53-bhg"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Smu-ee-yDw" secondAttribute="bottom" constant="4" id="R2c-ZG-e6t"/>
+                                <constraint firstItem="bTg-tz-MeL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Smu-ee-yDw" secondAttribute="trailing" constant="15" id="SWd-12-MkJ"/>
+                                <constraint firstItem="Dmb-DB-qYD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="63K-dk-zma" secondAttribute="top" constant="4" id="aR4-RX-SdD"/>
+                                <constraint firstAttribute="height" constant="60" id="eJK-S8-Qpd"/>
+                                <constraint firstAttribute="trailing" secondItem="bTg-tz-MeL" secondAttribute="trailing" constant="15" id="p1F-U6-T7g"/>
+                                <constraint firstItem="bTg-tz-MeL" firstAttribute="centerY" secondItem="63K-dk-zma" secondAttribute="centerY" id="uRP-83-OpE"/>
+                                <constraint firstAttribute="bottom" secondItem="Dmb-DB-qYD" secondAttribute="bottom" multiplier="2" id="unn-lT-UnV"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1HB-E8-7yv">
+                            <rect key="frame" x="0.0" y="60" width="414" height="612"/>
+                            <viewLayoutGuide key="safeArea" id="3Kk-u1-Cho"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="QCy-Hz-OmU"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="63K-dk-zma" firstAttribute="leading" secondItem="rYv-tB-NBo" secondAttribute="leading" id="ESF-Od-twa"/>
+                        <constraint firstItem="QCy-Hz-OmU" firstAttribute="trailing" secondItem="1HB-E8-7yv" secondAttribute="trailing" id="TGd-vD-NHX"/>
+                        <constraint firstItem="1HB-E8-7yv" firstAttribute="leading" secondItem="QCy-Hz-OmU" secondAttribute="leading" id="TXR-n6-UKP"/>
+                        <constraint firstItem="63K-dk-zma" firstAttribute="top" secondItem="rYv-tB-NBo" secondAttribute="top" id="Zc3-4r-ctR"/>
+                        <constraint firstAttribute="bottom" secondItem="1HB-E8-7yv" secondAttribute="bottom" id="Zub-UU-WWw"/>
+                        <constraint firstItem="1HB-E8-7yv" firstAttribute="top" secondItem="63K-dk-zma" secondAttribute="bottom" id="gC3-hD-i6M"/>
+                        <constraint firstAttribute="trailing" secondItem="63K-dk-zma" secondAttribute="trailing" id="tAl-Ax-6fb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rYv-tB-NBo" secondAttribute="trailing" id="3Di-Ht-mGd"/>
+                <constraint firstItem="rYv-tB-NBo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Edc-F4-kjs"/>
+                <constraint firstAttribute="bottom" secondItem="rYv-tB-NBo" secondAttribute="bottom" id="TT6-dy-OMf"/>
+                <constraint firstItem="rYv-tB-NBo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.75" id="gEo-05-F8j"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="meetingroom-close" width="23" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

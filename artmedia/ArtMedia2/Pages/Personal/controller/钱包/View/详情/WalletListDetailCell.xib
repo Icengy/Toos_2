@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="WalletListDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-rb-uM0">
+                        <rect key="frame" x="15" y="34" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKL-eI-RAn">
+                        <rect key="frame" x="19" y="34" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-BL-obv" customClass="IRTLButton">
+                        <rect key="frame" x="261" y="21.5" width="80" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="F0n-yc-oM3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="查看详情" image="Wallet_蓝色箭头">
+                            <color key="titleColor" red="0.20784313725490194" green="0.59215686274509804" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickToShowDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FUt-kL-fMV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YaE-rb-uM0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0JL-uu-WZo"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vKL-eI-RAn" secondAttribute="bottom" id="BGe-7s-Yed"/>
+                    <constraint firstItem="vKL-eI-RAn" firstAttribute="leading" secondItem="YaE-rb-uM0" secondAttribute="trailing" constant="4" id="NO3-x3-ZXk"/>
+                    <constraint firstItem="Dfk-BL-obv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vcy-tH-gcM"/>
+                    <constraint firstAttribute="trailing" secondItem="Dfk-BL-obv" secondAttribute="trailing" constant="15" id="Wjd-cL-deF"/>
+                    <constraint firstItem="vKL-eI-RAn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" id="YT9-JM-VJ0"/>
+                    <constraint firstItem="Dfk-BL-obv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vKL-eI-RAn" secondAttribute="trailing" constant="15" id="cbe-AQ-94Q"/>
+                    <constraint firstItem="YaE-rb-uM0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="db8-Rh-XE9"/>
+                    <constraint firstItem="vKL-eI-RAn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m6G-PQ-oIL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentLabel" destination="vKL-eI-RAn" id="e4K-5m-R9o"/>
+                <outlet property="showDetailBtn" destination="Dfk-BL-obv" id="NxO-wb-vmy"/>
+                <outlet property="showDetailBtnTrailingConstraint" destination="Wjd-cL-deF" id="7S4-BJ-jJ8"/>
+                <outlet property="titleLabel" destination="YaE-rb-uM0" id="YSe-uJ-dka"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="107.8125"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Dfk-BL-obv">
+            <size key="intrinsicContentSize" width="79" height="25"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Wallet_蓝色箭头" width="25" height="25"/>
+    </resources>
+</document>

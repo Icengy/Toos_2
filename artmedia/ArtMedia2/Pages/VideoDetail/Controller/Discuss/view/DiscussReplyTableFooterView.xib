@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscussReplyTableFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-38-5az" customClass="AMButton">
+                    <rect key="frame" x="0.0" y="0.0" width="458" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="查看全部23条回复&gt;">
+                        <color key="titleColor" red="0.066666666666666666" green="0.40392156862745099" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickToMore:" destination="iN0-l3-epB" eventType="touchUpInside" id="H5E-CQ-IUF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qxi-38-5az" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2pQ-Iz-mFy"/>
+                <constraint firstItem="qxi-38-5az" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fzM-MF-w6f"/>
+                <constraint firstAttribute="bottom" secondItem="qxi-38-5az" secondAttribute="bottom" id="g52-wf-Zba"/>
+                <constraint firstAttribute="trailing" secondItem="qxi-38-5az" secondAttribute="trailing" id="x7z-Um-ba3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clickBtn" destination="qxi-38-5az" id="x7f-ns-4KB"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="-91"/>
+        </view>
+    </objects>
+</document>

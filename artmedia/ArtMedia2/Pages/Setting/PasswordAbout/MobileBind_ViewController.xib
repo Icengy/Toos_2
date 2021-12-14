@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MobileBind_ViewController">
+            <connections>
+                <outlet property="changeBindView" destination="jQv-Q2-ToB" id="GGB-MC-L67"/>
+                <outlet property="changeBindViewTopConstraint" destination="tBa-Po-vMe" id="0Ui-hB-JHg"/>
+                <outlet property="changeBtnHeightConstraint" destination="9oe-Ez-BwY" id="atz-uS-TMb"/>
+                <outlet property="changePhoneBtn" destination="5xo-Od-kqG" id="krF-ou-y82"/>
+                <outlet property="nameLabel" destination="x7U-mg-PoO" id="mJH-ub-roR"/>
+                <outlet property="phoneLabel" destination="3o6-Ct-Mfe" id="jJ0-7P-mU9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-Q2-ToB">
+                    <rect key="frame" x="15" y="20" width="345" height="632"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xo-Od-kqG" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="68.5" width="345" height="44"/>
+                            <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="9oe-Ez-BwY"/>
+                            </constraints>
+                            <state key="normal" title="更换手机号"/>
+                            <connections>
+                                <action selector="clickToChangePhone:" destination="-1" eventType="touchUpInside" id="jrU-S5-QsU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已绑定手机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7U-mg-PoO">
+                            <rect key="frame" x="0.0" y="8" width="345" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="ToN-g6-ixC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.47843137250000001" green="0.50588235290000005" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="159****2222" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o6-Ct-Mfe">
+                            <rect key="frame" x="0.0" y="33" width="345" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="x7U-mg-PoO" firstAttribute="leading" secondItem="jQv-Q2-ToB" secondAttribute="leading" id="5Kc-eR-PhI"/>
+                        <constraint firstItem="5xo-Od-kqG" firstAttribute="top" secondItem="3o6-Ct-Mfe" secondAttribute="bottom" constant="15" id="5hg-BX-ktU"/>
+                        <constraint firstItem="3o6-Ct-Mfe" firstAttribute="leading" secondItem="jQv-Q2-ToB" secondAttribute="leading" id="JA8-mm-GUQ"/>
+                        <constraint firstAttribute="trailing" secondItem="x7U-mg-PoO" secondAttribute="trailing" id="PPd-ZC-1Bd"/>
+                        <constraint firstItem="5xo-Od-kqG" firstAttribute="leading" secondItem="jQv-Q2-ToB" secondAttribute="leading" id="a5V-tY-arR"/>
+                        <constraint firstItem="x7U-mg-PoO" firstAttribute="top" secondItem="jQv-Q2-ToB" secondAttribute="top" constant="8" id="eq8-f7-kBc"/>
+                        <constraint firstAttribute="trailing" secondItem="5xo-Od-kqG" secondAttribute="trailing" id="hcx-Bl-Wh2"/>
+                        <constraint firstItem="3o6-Ct-Mfe" firstAttribute="top" secondItem="x7U-mg-PoO" secondAttribute="bottom" id="wYz-UO-qRH"/>
+                        <constraint firstAttribute="trailing" secondItem="3o6-Ct-Mfe" secondAttribute="trailing" id="xm3-KU-0WD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="jQv-Q2-ToB" secondAttribute="bottom" constant="15" id="9FQ-Zg-qJp"/>
+                <constraint firstItem="jQv-Q2-ToB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="eHz-Oe-MYo"/>
+                <constraint firstItem="jQv-Q2-ToB" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="tBa-Po-vMe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jQv-Q2-ToB" secondAttribute="trailing" constant="15" id="xBB-N5-0ac"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="148" y="55.322338830584712"/>
+        </view>
+    </objects>
+</document>

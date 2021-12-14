@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YiBRechargeViewController">
+            <connections>
+                <outlet property="agreementTV" destination="FSk-zR-Kx3" id="KcZ-MD-A7e"/>
+                <outlet property="confirmBtn" destination="Wki-ZQ-SWF" id="x5C-La-HlN"/>
+                <outlet property="itemView" destination="14l-4m-Gbh" id="hGO-HP-dcI"/>
+                <outlet property="itemViewHeightConstraint" destination="qWJ-Xa-6NC" id="PB9-Lk-1wC"/>
+                <outlet property="tips1Label" destination="pb8-ei-xmk" id="sih-5Q-OF9"/>
+                <outlet property="tips2Label" destination="dn2-lA-0fs" id="Ta5-la-da0"/>
+                <outlet property="tipsLabel" destination="STJ-aG-utO" id="mdd-Ll-COV"/>
+                <outlet property="titleLabel" destination="zyL-9Y-tcr" id="cwJ-M2-sCW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择充值金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyL-9Y-tcr">
+                    <rect key="frame" x="15" y="59" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14l-4m-Gbh" customClass="YiBRechargeItemView">
+                    <rect key="frame" x="15" y="92" width="384" height="180"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="qWJ-Xa-6NC"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-aG-utO">
+                    <rect key="frame" x="15" y="307" width="66.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wki-ZQ-SWF" customClass="AMButton">
+                    <rect key="frame" x="62" y="803" width="290" height="44"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="sCB-qy-Cd5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确认充值">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickToConfirm:" destination="-1" eventType="touchUpInside" id="u7b-zk-wX6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.由于苹果政策限制，苹果设备上充值的艺币无法在其他（非苹果平台设备使用；                            " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-ei-xmk">
+                    <rect key="frame" x="15" y="338" width="381.5" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.艺币到账偶有延迟，敬请谅解；如遇到问题，请联系客服，客服电话：456456456" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn2-lA-0fs">
+                    <rect key="frame" x="15" y="386.5" width="383.5" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="支付即同意艺币用户协议" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FSk-zR-Kx3" customClass="AgreementTextView">
+                    <rect key="frame" x="119" y="769" width="176" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="NqR-Ff-lz2"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="FSk-zR-Kx3" firstAttribute="centerX" secondItem="Wki-ZQ-SWF" secondAttribute="centerX" id="5NQ-1B-9i2"/>
+                <constraint firstItem="FSk-zR-Kx3" firstAttribute="width" secondItem="Wki-ZQ-SWF" secondAttribute="width" multiplier="0.606897" id="7a4-px-hie"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dn2-lA-0fs" secondAttribute="trailing" constant="15" id="K0b-wi-QNd"/>
+                <constraint firstItem="STJ-aG-utO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="PKt-Vu-pKF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="14l-4m-Gbh" secondAttribute="trailing" constant="15" id="QtY-i0-pIL"/>
+                <constraint firstItem="dn2-lA-0fs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="UZK-Y1-3Xo"/>
+                <constraint firstItem="zyL-9Y-tcr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="XLs-uL-hDC"/>
+                <constraint firstItem="Wki-ZQ-SWF" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Xws-Sf-iKC"/>
+                <constraint firstItem="pb8-ei-xmk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="Z6Y-3J-ieX"/>
+                <constraint firstItem="Wki-ZQ-SWF" firstAttribute="top" secondItem="FSk-zR-Kx3" secondAttribute="bottom" constant="4" id="hvr-6T-TnK"/>
+                <constraint firstItem="zyL-9Y-tcr" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="kAl-ZC-BS1"/>
+                <constraint firstItem="14l-4m-Gbh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="naz-KI-dDg"/>
+                <constraint firstItem="Wki-ZQ-SWF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="ueT-IZ-Fn4"/>
+                <constraint firstItem="pb8-ei-xmk" firstAttribute="top" secondItem="STJ-aG-utO" secondAttribute="bottom" constant="15" id="w8I-8e-NH1"/>
+                <constraint firstItem="14l-4m-Gbh" firstAttribute="top" secondItem="zyL-9Y-tcr" secondAttribute="bottom" constant="15" id="xXR-6x-C7d"/>
+                <constraint firstItem="dn2-lA-0fs" firstAttribute="top" secondItem="pb8-ei-xmk" secondAttribute="bottom" constant="15" id="xbq-L6-N0Q"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pb8-ei-xmk" secondAttribute="trailing" constant="15" id="xo6-rw-YpK"/>
+                <constraint firstItem="STJ-aG-utO" firstAttribute="top" secondItem="14l-4m-Gbh" secondAttribute="bottom" constant="35" id="yQZ-tq-peu"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Wki-ZQ-SWF" secondAttribute="bottom" constant="15" id="zfh-wP-1dy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </view>
+    </objects>
+</document>

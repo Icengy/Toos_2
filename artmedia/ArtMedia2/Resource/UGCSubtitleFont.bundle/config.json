@@ -1,0 +1,39 @@
+{
+  "fontList" : [    
+    {
+      "fontname" : "PangMenZhengDao",
+      "filename" : "标题体.ttf",
+      "name" : "标题体"
+    },
+    
+    {
+      "fontname" : "zcoolqingkehuangyouti-Regular",
+      "filename" : "黄油体.ttf",
+      "name" : "黄油体"
+    },
+    
+    {
+      "fontname" : "zcoolwenyiti",
+      "filename" : "文艺体.ttf",
+      "name" : "文艺体"
+    },
+    
+    {
+      "fontname" : "SentyMARUKO",
+      "filename" : "小丸子.ttf",
+      "name" : "小丸子"
+    },
+    
+    {
+      "fontname" : "xiaowei",
+      "filename" : "小薇体.otf",
+      "name" : "小薇"
+    },
+    
+    {
+      "fontname" : "HappyZcool-2016",
+      "filename" : "快乐体.ttf",
+      "name" : "快乐体"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="AuctionSpecialDetailHeadImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="b60-0Q-mQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="270"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="b60-0Q-mQJ" secondAttribute="height" multiplier="374:270" id="uID-6F-lb2"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic-liveType-aucitionDet" translatesAutoresizingMaskIntoConstraints="NO" id="oCz-zt-IZE">
+                        <rect key="frame" x="15" y="15" width="66" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="Lc7-CZ-LbL"/>
+                            <constraint firstAttribute="height" constant="22" id="lij-Ny-rrP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b60-0Q-mQJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GKn-b3-DYG"/>
+                    <constraint firstAttribute="trailing" secondItem="b60-0Q-mQJ" secondAttribute="trailing" id="JMs-df-VH6"/>
+                    <constraint firstItem="b60-0Q-mQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kbt-7Q-Ilq"/>
+                    <constraint firstItem="oCz-zt-IZE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MF6-EX-Er0"/>
+                    <constraint firstAttribute="bottom" secondItem="b60-0Q-mQJ" secondAttribute="bottom" id="P1m-kv-QE0"/>
+                    <constraint firstItem="oCz-zt-IZE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vwM-xk-siX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headImageView" destination="b60-0Q-mQJ" id="WwH-VZ-t27"/>
+                <outlet property="statusImageView" destination="oCz-zt-IZE" id="Vb6-VS-Yra"/>
+            </connections>
+            <point key="canvasLocation" x="-162.31884057971016" y="198.88392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="80" height="80"/>
+        <image name="pic-liveType-aucitionDet" width="66" height="22"/>
+    </resources>
+</document>

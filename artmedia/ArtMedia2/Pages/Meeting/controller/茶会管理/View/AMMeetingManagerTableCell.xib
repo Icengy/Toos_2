@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="AMMeetingManagerTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待开始" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-id-jtc">
+                        <rect key="frame" x="10" y="13.5" width="43" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dsu-id-jtc" secondAttribute="height" multiplier="43:18" id="5u9-X2-ekZ"/>
+                            <constraint firstAttribute="height" constant="18" id="hCb-HK-hKK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKQ-hq-ggc">
+                        <rect key="frame" x="386.5" y="15" width="11.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="RF3-Wa-Eu0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-NS-MWa">
+                        <rect key="frame" x="378.5" y="15" width="8" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="U7b-Ua-Voo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.8862745098" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QgI-12-XwS">
+                        <rect key="frame" x="82.5" y="164" width="315.5" height="36"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVE-0L-tGW" customClass="AMButton">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="lfs-Vi-gUj"/>
+                                    <constraint firstAttribute="width" secondItem="XVE-0L-tGW" secondAttribute="height" multiplier="74:28" id="vIu-8P-R0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="查看详情">
+                                    <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76862745098039209" green="0.77254901960784317" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tiv-bZ-ZxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSa-7P-Niy" customClass="AMButton">
+                                <rect key="frame" x="110" y="0.0" width="95.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="s5g-2V-y1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="查看邀请">
+                                    <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76862745099999996" green="0.7725490196" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToLookInvitation:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZpV-bx-Rf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOP-tv-hTA" customClass="AMButton">
+                                <rect key="frame" x="220.5" y="0.0" width="95" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="uie-1m-Dda"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="进入房间">
+                                    <color key="titleColor" red="0.88627450980392153" green="0.5725490196078431" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.88627450980392153" green="0.5725490196078431" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToEnterRoom:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mI0-MM-XEh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NOP-tv-hTA" firstAttribute="width" secondItem="NOP-tv-hTA" secondAttribute="height" multiplier="74:28" id="UGG-9C-Lsc"/>
+                            <constraint firstItem="jSa-7P-Niy" firstAttribute="width" secondItem="jSa-7P-Niy" secondAttribute="height" multiplier="74:28" id="bnj-bD-CKU"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-Vd-ycE">
+                        <rect key="frame" x="10" y="41.5" width="388" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会客开始时间：2020-10-10 20:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1q-FS-7qF">
+                                <rect key="frame" x="0.0" y="0.0" width="388" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="TpK-EY-K2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会客详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a1-4Z-8j3">
+                                <rect key="frame" x="0.0" y="45" width="388" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RKQ-hq-ggc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="8d9-Ks-9Sx"/>
+                    <constraint firstAttribute="trailing" secondItem="nlT-Vd-ycE" secondAttribute="trailing" constant="10" id="BeL-p0-sxr"/>
+                    <constraint firstItem="RKQ-hq-ggc" firstAttribute="centerY" secondItem="dsu-id-jtc" secondAttribute="centerY" id="FYS-Ek-njP"/>
+                    <constraint firstItem="RKQ-hq-ggc" firstAttribute="centerY" secondItem="AXk-NS-MWa" secondAttribute="centerY" id="KRD-Mq-NZQ"/>
+                    <constraint firstAttribute="bottom" secondItem="QgI-12-XwS" secondAttribute="bottom" constant="15" id="LYt-KP-lkC"/>
+                    <constraint firstItem="dsu-id-jtc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SSU-Ld-Dsg"/>
+                    <constraint firstAttribute="trailing" secondItem="RKQ-hq-ggc" secondAttribute="trailing" constant="10" id="e4z-Y8-UIQ"/>
+                    <constraint firstItem="QgI-12-XwS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nlT-Vd-ycE" secondAttribute="bottom" constant="15" id="eAt-EG-etB"/>
+                    <constraint firstAttribute="trailing" secondItem="QgI-12-XwS" secondAttribute="trailing" constant="10" id="jpy-TU-R7Y"/>
+                    <constraint firstItem="nlT-Vd-ycE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rTq-FX-F1y"/>
+                    <constraint firstItem="RKQ-hq-ggc" firstAttribute="leading" secondItem="AXk-NS-MWa" secondAttribute="trailing" id="yhw-Xz-Bn9"/>
+                    <constraint firstItem="nlT-Vd-ycE" firstAttribute="top" secondItem="dsu-id-jtc" secondAttribute="bottom" constant="10" id="zSC-Vs-4hV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actualNumLabel" destination="AXk-NS-MWa" id="xNb-WZ-LsC"/>
+                <outlet property="contentLabel" destination="3a1-4Z-8j3" id="9hp-NZ-ccG"/>
+                <outlet property="detalButton" destination="XVE-0L-tGW" id="eab-Wh-1hV"/>
+                <outlet property="goRoomButton" destination="NOP-tv-hTA" id="qDE-1d-skp"/>
+                <outlet property="lookInvitationButton" destination="jSa-7P-Niy" id="NSp-Tx-1gT"/>
+                <outlet property="peopleNumLabel" destination="RKQ-hq-ggc" id="5sB-wj-xfw"/>
+                <outlet property="statusLabel" destination="dsu-id-jtc" id="tIN-TO-FyN"/>
+                <outlet property="titleLabel" destination="J1q-FS-7qF" id="aV7-0u-zLT"/>
+            </connections>
+            <point key="canvasLocation" x="2.8985507246376816" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="NOP-tv-hTA">
+            <size key="intrinsicContentSize" width="50" height="27"/>
+        </designable>
+        <designable name="XVE-0L-tGW">
+            <size key="intrinsicContentSize" width="50" height="27"/>
+        </designable>
+        <designable name="jSa-7P-Niy">
+            <size key="intrinsicContentSize" width="50" height="27"/>
+        </designable>
+    </designables>
+</document>

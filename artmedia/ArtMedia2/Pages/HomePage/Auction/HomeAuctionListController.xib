@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeAuctionListController">
+            <connections>
+                <outlet property="hammerButton" destination="yGI-fj-1Ed" id="ezS-94-qsT"/>
+                <outlet property="tableView" destination="nPQ-5l-1Xn" id="1OW-aR-Ery"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nPQ-5l-1Xn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-fj-1Ed" customClass="AMButton">
+                    <rect key="frame" x="349" y="797" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1qw-QQ-GGs"/>
+                        <constraint firstAttribute="width" constant="50" id="lqI-F9-Awg"/>
+                    </constraints>
+                    <state key="normal" image="icon-auctionHistory-hummer"/>
+                    <connections>
+                        <action selector="goAuctionHistoryList:" destination="-1" eventType="touchUpInside" id="sCZ-fm-OcC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nPQ-5l-1Xn" secondAttribute="bottom" id="5cg-HI-lSe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="yGI-fj-1Ed" secondAttribute="trailing" constant="15" id="7RI-Ad-Xe2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="nPQ-5l-1Xn" secondAttribute="trailing" id="8eU-Zt-HA7"/>
+                <constraint firstItem="nPQ-5l-1Xn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="S8g-0D-hOn"/>
+                <constraint firstItem="nPQ-5l-1Xn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VuC-bz-Enk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="yGI-fj-1Ed" secondAttribute="bottom" constant="15" id="yrK-9j-5ak"/>
+            </constraints>
+            <point key="canvasLocation" x="-252.17391304347828" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="yGI-fj-1Ed">
+            <size key="intrinsicContentSize" width="40" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icon-auctionHistory-hummer" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

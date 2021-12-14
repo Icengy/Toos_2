@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="AMNewArtistMainTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈振濂，男，汉族，号颐斋，1956年2月生于上海，浙江鄞县人。1976年10月参加工作，1990年12月加入中国民主同盟，硕士" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvh-fZ-BRn">
+                        <rect key="frame" x="15" y="15" width="341" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="zl2-rB-Ezv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Pvh-fZ-BRn" secondAttribute="bottom" constant="15" id="ad9-i9-RMK"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pvh-fZ-BRn" secondAttribute="trailing" constant="15" id="ckT-HP-MAI"/>
+                    <constraint firstItem="Pvh-fZ-BRn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gac-yf-cBM"/>
+                    <constraint firstItem="Pvh-fZ-BRn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zcU-9Q-ZmH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="signatureLabel" destination="Pvh-fZ-BRn" id="6UK-rc-BjG"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="97.433035714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

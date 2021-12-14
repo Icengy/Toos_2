@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMeetingEditViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="By0-st-ouO" id="z6x-9E-bHp"/>
+                <outlet property="tableView" destination="RPa-az-bHH" id="DSe-4O-gVk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5p-as-3s0">
+                    <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By0-st-ouO" customClass="AMButton">
+                            <rect key="frame" x="15" y="10" width="384" height="40"/>
+                            <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EtR-dl-ttj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确定"/>
+                            <state key="disabled" title="确定"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickToConfirm:" destination="-1" eventType="touchUpInside" id="cwu-fd-vZA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="By0-st-ouO" firstAttribute="top" secondItem="xFL-a1-vkm" secondAttribute="top" constant="10" id="KAN-hr-FkW"/>
+                        <constraint firstAttribute="trailing" secondItem="By0-st-ouO" secondAttribute="trailing" constant="15" id="cOd-MK-LrC"/>
+                        <constraint firstItem="xFL-a1-vkm" firstAttribute="bottom" secondItem="By0-st-ouO" secondAttribute="bottom" constant="10" id="cee-Mk-Lxn"/>
+                        <constraint firstItem="By0-st-ouO" firstAttribute="leading" secondItem="A5p-as-3s0" secondAttribute="leading" constant="15" id="fx9-Cx-KDL"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="xFL-a1-vkm"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-az-bHH" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="RPa-az-bHH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="EOt-NU-XLI"/>
+                <constraint firstItem="A5p-as-3s0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ij8-lg-qdJ"/>
+                <constraint firstAttribute="bottom" secondItem="A5p-as-3s0" secondAttribute="bottom" id="RP7-tL-L4d"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="A5p-as-3s0" secondAttribute="trailing" id="b3o-0u-hPQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RPa-az-bHH" secondAttribute="trailing" id="hWz-Ry-dpU"/>
+                <constraint firstItem="RPa-az-bHH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="jt4-EQ-cpf"/>
+                <constraint firstItem="A5p-as-3s0" firstAttribute="top" secondItem="RPa-az-bHH" secondAttribute="bottom" id="lKe-CG-fd5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="238" id="KGk-i7-Jjw" customClass="MyAuctionMoneyTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王伯敏·2020年山水作品拍卖专场" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-Ci-mTd">
+                        <rect key="frame" x="15" y="0.0" width="209.5" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="1YL-Q9-lRb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-Kn-otL">
+                        <rect key="frame" x="0.0" y="59" width="507" height="1"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zus-tF-7kM"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hsc-6p-xNh">
+                        <rect key="frame" x="0.0" y="60" width="507" height="165"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipV-rw-7sz" customClass="MyAuctionMoneyNormalView">
+                                <rect key="frame" x="0.0" y="0.0" width="507" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="kqe-Si-4Qp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCA-IR-DrS" customClass="MyAuctionMoneyNormalView">
+                                <rect key="frame" x="0.0" y="55" width="507" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8s-9z-lDh" customClass="MyAuctionMoneyNormalView">
+                                <rect key="frame" x="0.0" y="110" width="507" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qCA-IR-DrS" firstAttribute="height" secondItem="ipV-rw-7sz" secondAttribute="height" id="OYa-MU-y2b"/>
+                            <constraint firstItem="s8s-9z-lDh" firstAttribute="height" secondItem="ipV-rw-7sz" secondAttribute="height" id="TCC-96-m5k"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="V0c-Kn-otL" secondAttribute="trailing" id="65Z-tb-p7r"/>
+                    <constraint firstItem="Rah-Ci-mTd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Dhk-EY-EWm"/>
+                    <constraint firstItem="Rah-Ci-mTd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R4L-ZY-KYq"/>
+                    <constraint firstItem="V0c-Kn-otL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a3e-zx-pW6"/>
+                    <constraint firstItem="Hsc-6p-xNh" firstAttribute="top" secondItem="Rah-Ci-mTd" secondAttribute="bottom" id="aOk-zZ-ekO"/>
+                    <constraint firstItem="Hsc-6p-xNh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dFF-T3-0u6"/>
+                    <constraint firstItem="V0c-Kn-otL" firstAttribute="bottom" secondItem="Rah-Ci-mTd" secondAttribute="bottom" id="eGf-9C-VRD"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rah-Ci-mTd" secondAttribute="trailing" constant="15" id="nZe-ER-7zu"/>
+                    <constraint firstAttribute="bottom" secondItem="Hsc-6p-xNh" secondAttribute="bottom" id="vVb-A7-bkW"/>
+                    <constraint firstAttribute="trailing" secondItem="Hsc-6p-xNh" secondAttribute="trailing" id="zKa-2e-67u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="forfeitureView" destination="s8s-9z-lDh" id="uJb-YQ-c7I"/>
+                <outlet property="payView" destination="ipV-rw-7sz" id="Ano-kR-NGf"/>
+                <outlet property="returnView" destination="qCA-IR-DrS" id="5qk-xH-hc8"/>
+                <outlet property="stackView" destination="Hsc-6p-xNh" id="RSX-RW-xiR"/>
+                <outlet property="titleLabel" destination="Rah-Ci-mTd" id="cRh-cL-096"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="182.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

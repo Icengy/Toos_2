@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalRealNameAuthView">
+            <connections>
+                <outlet property="detailTF" destination="WRw-Wc-7im" id="4fV-S2-Syk"/>
+                <outlet property="titleLabel" destination="jRN-y1-VEl" id="WdJ-lY-z9L"/>
+                <outlet property="view" destination="iN0-l3-epB" id="EDu-dm-ggq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRN-y1-VEl">
+                    <rect key="frame" x="15" y="34" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRw-Wc-7im">
+                    <rect key="frame" x="30" y="0.0" width="465" height="68"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WRw-Wc-7im" secondAttribute="trailing" constant="15" id="55O-it-E22"/>
+                <constraint firstItem="WRw-Wc-7im" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="QgV-xs-C4f"/>
+                <constraint firstItem="jRN-y1-VEl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y33-HU-zLX"/>
+                <constraint firstItem="WRw-Wc-7im" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e7l-qM-HYh"/>
+                <constraint firstItem="WRw-Wc-7im" firstAttribute="leading" secondItem="jRN-y1-VEl" secondAttribute="trailing" constant="15" id="mAy-2h-QjA"/>
+                <constraint firstItem="jRN-y1-VEl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="q9D-Df-UFy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="124.6376811594203" y="85.044642857142847"/>
+        </view>
+    </objects>
+</document>

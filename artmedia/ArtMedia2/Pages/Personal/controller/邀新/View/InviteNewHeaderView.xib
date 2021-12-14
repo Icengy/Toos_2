@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InviteNewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqg-aI-vOv">
+                    <rect key="frame" x="0.0" y="0.0" width="370" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已成功邀请0人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZR-AG-Hyk">
+                            <rect key="frame" x="84.5" y="17.5" width="74.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmA-H1-Un8">
+                            <rect key="frame" x="15" y="15" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="VZR-AG-Hyk" firstAttribute="centerY" secondItem="Xqg-aI-vOv" secondAttribute="centerY" id="GBY-jb-keM"/>
+                        <constraint firstItem="UmA-H1-Un8" firstAttribute="leading" secondItem="Xqg-aI-vOv" secondAttribute="leading" constant="15" id="Gbk-vT-f8p"/>
+                        <constraint firstItem="UmA-H1-Un8" firstAttribute="centerY" secondItem="Xqg-aI-vOv" secondAttribute="centerY" id="gcc-4B-6Nb"/>
+                        <constraint firstItem="VZR-AG-Hyk" firstAttribute="leading" secondItem="UmA-H1-Un8" secondAttribute="trailing" constant="8" id="pVQ-s9-I2U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xqg-aI-vOv" secondAttribute="bottom" id="1xQ-0H-EJA"/>
+                <constraint firstItem="Xqg-aI-vOv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JRZ-YG-EPl"/>
+                <constraint firstItem="Xqg-aI-vOv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YJR-Tq-sNP"/>
+                <constraint firstAttribute="trailing" secondItem="Xqg-aI-vOv" secondAttribute="trailing" id="sft-Px-Ps8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="inviteCountLabel" destination="VZR-AG-Hyk" id="GYt-2K-wDn"/>
+                <outlet property="mainView" destination="Xqg-aI-vOv" id="KWT-ri-kuf"/>
+                <outlet property="titleLabel" destination="UmA-H1-Un8" id="mdX-Fq-ey2"/>
+            </connections>
+            <point key="canvasLocation" x="-181.15942028985509" y="-110.49107142857143"/>
+        </view>
+    </objects>
+</document>

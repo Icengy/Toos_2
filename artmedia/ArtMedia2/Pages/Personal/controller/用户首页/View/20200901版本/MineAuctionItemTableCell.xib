@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="MineAuctionItemTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="474" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的拍卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcP-to-qH3">
+                        <rect key="frame" x="15" y="0.0" width="61.5" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="yG7-qD-lUk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4S7-K1-703">
+                        <rect key="frame" x="10" y="40" width="454" height="75"/>
+                        <subviews>
+                            <button opaque="NO" tag="2020111210500" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-4b-bHc" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="未结拍品" image="auction_Item_0">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToAuctionItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l6q-7o-eqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020111210501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onH-QZ-ffL" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="116" y="0.0" width="106" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="拍卖订单" image="auction_Item_1">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToAuctionItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Yke-dN-aim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020111210502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng6-4x-dsr" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="232" y="0.0" width="106" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="参拍记录" image="auction_Item_2">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToAuctionItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="njK-WM-t9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2020111210503" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-9x-zPs" customClass="PersonalMenuItemButton">
+                                <rect key="frame" x="348" y="0.0" width="106" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="保证金" image="auction_Item_3">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToAuctionItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m2f-Yr-wI3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="onH-QZ-ffL" firstAttribute="width" secondItem="L4Y-4b-bHc" secondAttribute="width" id="TYT-tn-I6d"/>
+                            <constraint firstAttribute="height" constant="75" id="Zbg-sg-mzI"/>
+                            <constraint firstItem="Pex-9x-zPs" firstAttribute="width" secondItem="L4Y-4b-bHc" secondAttribute="width" id="fFA-hl-z4v"/>
+                            <constraint firstItem="Ng6-4x-dsr" firstAttribute="width" secondItem="L4Y-4b-bHc" secondAttribute="width" id="rhr-AD-0Fw"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="vbR-Mx-Uk8"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wcP-to-qH3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0yA-4N-1BA"/>
+                    <constraint firstItem="4S7-K1-703" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8QF-kv-PkG"/>
+                    <constraint firstItem="wcP-to-qH3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CmA-He-5bY"/>
+                    <constraint firstAttribute="bottom" secondItem="4S7-K1-703" secondAttribute="bottom" id="O1H-AT-Mom"/>
+                    <constraint firstAttribute="trailing" secondItem="4S7-K1-703" secondAttribute="trailing" constant="10" id="VOq-P6-ozS"/>
+                    <constraint firstItem="4S7-K1-703" firstAttribute="top" secondItem="wcP-to-qH3" secondAttribute="bottom" id="a5c-u6-wdk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="stackView" destination="4S7-K1-703" id="iad-hA-JGW"/>
+                <outlet property="titleLabel" destination="wcP-to-qH3" id="yhH-Ak-Pxe"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="108"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="L4Y-4b-bHc">
+            <size key="intrinsicContentSize" width="79" height="25"/>
+        </designable>
+        <designable name="Ng6-4x-dsr">
+            <size key="intrinsicContentSize" width="79" height="25"/>
+        </designable>
+        <designable name="Pex-9x-zPs">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+        <designable name="onH-QZ-ffL">
+            <size key="intrinsicContentSize" width="79" height="25"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="auction_Item_0" width="25" height="25"/>
+        <image name="auction_Item_1" width="25" height="25"/>
+        <image name="auction_Item_2" width="25" height="25"/>
+        <image name="auction_Item_3" width="25" height="25"/>
+    </resources>
+</document>

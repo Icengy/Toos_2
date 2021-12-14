@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="455" id="KGk-i7-Jjw" customClass="AuctionItemDetailCycleImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="418"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="418"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUQ-KF-fX3">
+                        <rect key="frame" x="0.0" y="0.0" width="418" height="418"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FUQ-KF-fX3" secondAttribute="height" multiplier="1:1" id="5ij-Hv-Yzo"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBQ-bL-m6i">
+                        <rect key="frame" x="0.0" y="0.0" width="418" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM5-ip-bbt" customClass="AMButton">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IW4-j7-jwg"/>
+                                    <constraint firstAttribute="width" secondItem="sM5-ip-bbt" secondAttribute="height" id="Urf-2h-MMQ"/>
+                                </constraints>
+                                <state key="normal" image="backwhite"/>
+                                <connections>
+                                    <action selector="backClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6M1-kh-ZS1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-2j-8RU" customClass="AMButton">
+                                <rect key="frame" x="364" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ET2-2j-8RU" secondAttribute="height" id="58z-oF-LEM"/>
+                                    <constraint firstAttribute="height" constant="44" id="IMa-hV-zbf"/>
+                                </constraints>
+                                <state key="normal" image="icon-videoDet-share"/>
+                                <connections>
+                                    <action selector="clickToShare:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ECY-Xf-GOT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H54-8P-e0F"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ET2-2j-8RU" secondAttribute="trailing" constant="10" id="385-hv-NRT"/>
+                            <constraint firstItem="sM5-ip-bbt" firstAttribute="top" secondItem="H54-8P-e0F" secondAttribute="top" id="PFs-6J-uDF"/>
+                            <constraint firstItem="ET2-2j-8RU" firstAttribute="centerY" secondItem="sM5-ip-bbt" secondAttribute="centerY" id="Vxt-C8-5UB"/>
+                            <constraint firstAttribute="bottom" secondItem="sM5-ip-bbt" secondAttribute="bottom" id="fGd-Ai-wWH"/>
+                            <constraint firstItem="sM5-ip-bbt" firstAttribute="leading" secondItem="aBQ-bL-m6i" secondAttribute="leading" id="fjJ-ar-93G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aBQ-bL-m6i" secondAttribute="trailing" id="AJx-HY-RCE"/>
+                    <constraint firstItem="aBQ-bL-m6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TOJ-uf-fdr"/>
+                    <constraint firstAttribute="bottom" secondItem="FUQ-KF-fX3" secondAttribute="bottom" id="heu-0D-6AG"/>
+                    <constraint firstAttribute="trailing" secondItem="FUQ-KF-fX3" secondAttribute="trailing" id="jjO-Zu-cFZ"/>
+                    <constraint firstItem="FUQ-KF-fX3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wr3-c9-tKh"/>
+                    <constraint firstItem="aBQ-bL-m6i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xEM-Ja-5Jd"/>
+                    <constraint firstItem="FUQ-KF-fX3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xwL-sn-kOr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bannerBackView" destination="FUQ-KF-fX3" id="akU-CB-b1R"/>
+            </connections>
+            <point key="canvasLocation" x="453.62318840579712" y="185.49107142857142"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="ET2-2j-8RU">
+            <size key="intrinsicContentSize" width="26" height="28"/>
+        </designable>
+        <designable name="sM5-ip-bbt">
+            <size key="intrinsicContentSize" width="22" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="backwhite" width="22" height="29"/>
+        <image name="icon-videoDet-share" width="26" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="AuctionLiveMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOT 110" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAD-pG-V7f">
+                        <rect key="frame" x="15" y="5" width="50" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Rpv-iZ-2CG"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="oxE-4t-5dZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bjK-lI-04m">
+                        <rect key="frame" x="75" y="3.5" width="109" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="切换到该拍品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGP-Zv-B4I">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="75q-ZE-Ipq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="rzq-Ky-7jG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-liveRoom-hammer" translatesAutoresizingMaskIntoConstraints="NO" id="nuO-5u-8jF">
+                                <rect key="frame" x="85" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="665-Lb-qbQ"/>
+                                    <constraint firstAttribute="width" constant="24" id="QTj-o1-lQ7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nuO-5u-8jF" firstAttribute="centerY" secondItem="CGP-Zv-B4I" secondAttribute="centerY" id="LIS-b3-jH5"/>
+                            <constraint firstItem="nuO-5u-8jF" firstAttribute="leading" secondItem="CGP-Zv-B4I" secondAttribute="trailing" constant="5" id="ZqS-us-fmD"/>
+                            <constraint firstAttribute="height" constant="24" id="v5y-XH-hUE"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（我）121 大厅 73 14:48:31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBw-YM-W3v">
+                        <rect key="frame" x="287.5" y="5" width="164.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zgW-U7-qVS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bBw-YM-W3v" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4H9-am-5i6"/>
+                    <constraint firstItem="bjK-lI-04m" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BL5-vC-YKY"/>
+                    <constraint firstItem="lAD-pG-V7f" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HFt-Ze-yXj"/>
+                    <constraint firstAttribute="bottom" secondItem="lAD-pG-V7f" secondAttribute="bottom" constant="5" id="Ut0-C6-zAg"/>
+                    <constraint firstItem="lAD-pG-V7f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="X8a-0m-pLw"/>
+                    <constraint firstAttribute="trailing" secondItem="bBw-YM-W3v" secondAttribute="trailing" constant="14" id="i2J-hx-e77"/>
+                    <constraint firstItem="bjK-lI-04m" firstAttribute="leading" secondItem="lAD-pG-V7f" secondAttribute="trailing" constant="10" id="i8I-hP-pLl"/>
+                    <constraint firstItem="lAD-pG-V7f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tYy-5f-ECg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentLabel" destination="CGP-Zv-B4I" id="Tcw-ri-c0h"/>
+                <outlet property="hammerImageView" destination="nuO-5u-8jF" id="32y-8f-U3E"/>
+                <outlet property="lotNumberLabel" destination="lAD-pG-V7f" id="YMv-KR-1aj"/>
+                <outlet property="timeLabel" destination="bBw-YM-W3v" id="Jpf-H4-63M"/>
+            </connections>
+            <point key="canvasLocation" x="214.49275362318843" y="61.272321428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-liveRoom-hammer" width="24" height="24"/>
+    </resources>
+</document>

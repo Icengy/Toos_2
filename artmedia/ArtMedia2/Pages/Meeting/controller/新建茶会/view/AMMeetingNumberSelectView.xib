@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AMMeetingNumberSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s8-oY-tWL">
+                    <rect key="frame" x="0.0" y="712" width="414" height="184"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnT-US-Nt1" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="106" width="414" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="aXr-NO-iut"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.88627450980392153" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickToConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="SSU-EB-Aa5"/>
+                                <action selector="clickToHide:" destination="iN0-l3-epB" eventType="touchUpInside" id="T0g-t0-N01"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8l-Ug-UBw">
+                            <rect key="frame" x="0.0" y="105" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="oZG-Be-fsi"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6N1-En-Dso" customClass="SDRangeSlider">
+                            <rect key="frame" x="15" y="50" width="384" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Xw-t5-zpU"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftValue">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightValue">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择参会人数范围" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9Z-hn-Hkc">
+                            <rect key="frame" x="15" y="15" width="123" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="xVP-zT-PcJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2~20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oZ-et-QbJ">
+                            <rect key="frame" x="358" y="14.5" width="41" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6N1-En-Dso" firstAttribute="top" secondItem="j9Z-hn-Hkc" secondAttribute="bottom" constant="15" id="0Dp-nB-RCz"/>
+                        <constraint firstItem="j9Z-hn-Hkc" firstAttribute="top" secondItem="D5x-X6-6Xb" secondAttribute="top" constant="15" id="3m1-I4-mkd"/>
+                        <constraint firstItem="D5x-X6-6Xb" firstAttribute="trailing" secondItem="6N1-En-Dso" secondAttribute="trailing" constant="15" id="9kN-Tg-u2c"/>
+                        <constraint firstItem="F8l-Ug-UBw" firstAttribute="top" secondItem="6N1-En-Dso" secondAttribute="bottom" constant="15" id="FYF-XB-ONT"/>
+                        <constraint firstItem="D5x-X6-6Xb" firstAttribute="trailing" secondItem="HnT-US-Nt1" secondAttribute="trailing" id="Ogk-1l-WDG"/>
+                        <constraint firstItem="D5x-X6-6Xb" firstAttribute="trailing" secondItem="F8l-Ug-UBw" secondAttribute="trailing" id="UCW-0p-fgF"/>
+                        <constraint firstItem="D5x-X6-6Xb" firstAttribute="bottom" secondItem="HnT-US-Nt1" secondAttribute="bottom" id="ZUg-nI-K6V"/>
+                        <constraint firstItem="F8l-Ug-UBw" firstAttribute="leading" secondItem="D5x-X6-6Xb" secondAttribute="leading" id="cd2-d3-LbC"/>
+                        <constraint firstItem="HnT-US-Nt1" firstAttribute="leading" secondItem="D5x-X6-6Xb" secondAttribute="leading" id="fVx-c9-79Q"/>
+                        <constraint firstItem="HnT-US-Nt1" firstAttribute="top" secondItem="F8l-Ug-UBw" secondAttribute="bottom" id="gYC-6q-jGU"/>
+                        <constraint firstItem="D5x-X6-6Xb" firstAttribute="trailing" secondItem="9oZ-et-QbJ" secondAttribute="trailing" constant="15" id="i1X-mz-34w"/>
+                        <constraint firstItem="9oZ-et-QbJ" firstAttribute="centerY" secondItem="j9Z-hn-Hkc" secondAttribute="centerY" id="kkW-39-mOO"/>
+                        <constraint firstItem="6N1-En-Dso" firstAttribute="leading" secondItem="D5x-X6-6Xb" secondAttribute="leading" constant="15" id="vZo-6B-wFX"/>
+                        <constraint firstItem="j9Z-hn-Hkc" firstAttribute="leading" secondItem="D5x-X6-6Xb" secondAttribute="leading" constant="15" id="w3J-US-bVi"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="D5x-X6-6Xb"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5s8-oY-tWL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hig-CT-hml"/>
+                <constraint firstAttribute="bottom" secondItem="5s8-oY-tWL" secondAttribute="bottom" id="XIS-tO-a9b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5s8-oY-tWL" secondAttribute="trailing" id="c6t-SA-CHz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="confirmBtn" destination="HnT-US-Nt1" id="Prf-GP-hqN"/>
+                <outlet property="contentView" destination="5s8-oY-tWL" id="aqd-pA-Cxm"/>
+                <outlet property="rangeSlider" destination="6N1-En-Dso" id="C9P-bz-hqa"/>
+                <outlet property="titleLabel" destination="j9Z-hn-Hkc" id="YUG-Yj-2lO"/>
+                <outlet property="valueLabel" destination="9oZ-et-QbJ" id="bBu-D5-KZM"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="141"/>
+        </view>
+    </objects>
+</document>

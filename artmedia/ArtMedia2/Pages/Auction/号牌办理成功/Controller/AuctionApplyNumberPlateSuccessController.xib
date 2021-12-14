@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuctionApplyNumberPlateSuccessController">
+            <connections>
+                <outlet property="backSpecialButton" destination="GdE-bF-Ouk" id="9Ch-t8-LQY"/>
+                <outlet property="goAuctionButton" destination="OZF-yy-auh" id="dv6-vs-rO5"/>
+                <outlet property="numberLabel" destination="YrI-OI-9uU" id="7HT-Vb-HGa"/>
+                <outlet property="statusLabel" destination="bFF-CD-5pu" id="h7q-ui-2cP"/>
+                <outlet property="textLabel" destination="ONl-Ow-UKw" id="nhg-wS-bYy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-lotShop-checked" translatesAutoresizingMaskIntoConstraints="NO" id="kU7-XO-MdO">
+                    <rect key="frame" x="189.5" y="108" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="j8t-cN-GLS"/>
+                        <constraint firstAttribute="height" constant="35" id="xEa-Op-wFm"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaA-65-Dso" customClass="AMButton">
+                    <rect key="frame" x="0.0" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NEV-hH-cRe"/>
+                        <constraint firstAttribute="width" secondItem="oaA-65-Dso" secondAttribute="height" id="WiM-Aa-XWG"/>
+                    </constraints>
+                    <state key="normal" image="back_black"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="AfL-U9-5Uc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1002" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrI-OI-9uU">
+                    <rect key="frame" x="0.0" y="163" width="414" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="textColor" red="0.8784313725490196" green="0.32156862745098036" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="号牌办理成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFF-CD-5pu">
+                    <rect key="frame" x="0.0" y="194" width="414" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以用该号牌在专场“齐白石水墨”进行竞拍啦" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-Ow-UKw">
+                    <rect key="frame" x="40" y="227" width="334" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="uMO-LI-HS3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.61568627450980395" green="0.60784313725490191" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZF-yy-auh">
+                    <rect key="frame" x="217" y="280" width="137" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="进入拍场">
+                        <color key="titleColor" red="0.43529411759999997" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goAuctionClick:" destination="-1" eventType="touchUpInside" id="eFp-gI-T9y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdE-bF-Ouk">
+                    <rect key="frame" x="60" y="280" width="137" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wxq-GB-vnJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="回到专场">
+                        <color key="titleColor" red="0.43529411764705883" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backSpecialClick:" destination="-1" eventType="touchUpInside" id="Nti-GP-C5D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oaA-65-Dso" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6Qd-wj-ZXf"/>
+                <constraint firstItem="GdE-bF-Ouk" firstAttribute="top" secondItem="ONl-Ow-UKw" secondAttribute="bottom" constant="32" id="8uw-T5-7qh"/>
+                <constraint firstItem="kU7-XO-MdO" firstAttribute="top" secondItem="oaA-65-Dso" secondAttribute="bottom" constant="20" id="90c-th-jjt"/>
+                <constraint firstItem="oaA-65-Dso" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="C0h-OW-JJd"/>
+                <constraint firstItem="ONl-Ow-UKw" firstAttribute="top" secondItem="bFF-CD-5pu" secondAttribute="bottom" constant="16" id="FAc-j1-etF"/>
+                <constraint firstItem="ONl-Ow-UKw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="GV2-AR-65M"/>
+                <constraint firstItem="YrI-OI-9uU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="MEc-Wo-QJ8"/>
+                <constraint firstItem="bFF-CD-5pu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="MMZ-AM-Aq1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ONl-Ow-UKw" secondAttribute="trailing" constant="40" id="Myx-XJ-oH5"/>
+                <constraint firstItem="kU7-XO-MdO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O4B-bz-tqq"/>
+                <constraint firstItem="OZF-yy-auh" firstAttribute="centerY" secondItem="GdE-bF-Ouk" secondAttribute="centerY" id="Pt0-U1-fuU"/>
+                <constraint firstItem="YrI-OI-9uU" firstAttribute="top" secondItem="kU7-XO-MdO" secondAttribute="bottom" constant="20" id="VWP-e9-6zt"/>
+                <constraint firstItem="OZF-yy-auh" firstAttribute="leading" secondItem="GdE-bF-Ouk" secondAttribute="trailing" constant="20" id="aLd-h8-H2G"/>
+                <constraint firstItem="bFF-CD-5pu" firstAttribute="top" secondItem="YrI-OI-9uU" secondAttribute="bottom" constant="10" id="bzh-C5-VEU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="OZF-yy-auh" secondAttribute="trailing" constant="60" id="fUO-ne-2AT"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YrI-OI-9uU" secondAttribute="trailing" id="lLj-lg-POa"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bFF-CD-5pu" secondAttribute="trailing" id="mFs-uj-RSl"/>
+                <constraint firstItem="GdE-bF-Ouk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="rbd-IS-t8U"/>
+                <constraint firstItem="GdE-bF-Ouk" firstAttribute="width" secondItem="OZF-yy-auh" secondAttribute="width" id="wDb-kj-wVo"/>
+                <constraint firstItem="OZF-yy-auh" firstAttribute="height" secondItem="GdE-bF-Ouk" secondAttribute="height" id="y7h-VL-KiS"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="oaA-65-Dso">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back_black" width="12" height="21"/>
+        <image name="icon-lotShop-checked" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

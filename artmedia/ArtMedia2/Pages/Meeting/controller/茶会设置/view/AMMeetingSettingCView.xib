@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMeetingSettingCView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="axw-Iw-FV9"/>
+                <outlet property="webView" destination="Nlj-Nh-06A" id="ZMJ-U8-cjs"/>
+                <outlet property="webView_height_constraint" destination="jkg-DJ-E0f" id="Ghh-Dt-05p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="206"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlj-Nh-06A" customClass="IMYWebView">
+                    <rect key="frame" x="15" y="10" width="376" height="196"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jkg-DJ-E0f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nlj-Nh-06A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="BY5-JB-moR"/>
+                <constraint firstAttribute="trailing" secondItem="Nlj-Nh-06A" secondAttribute="trailing" constant="15" id="Sl1-DE-oYT"/>
+                <constraint firstAttribute="bottom" secondItem="Nlj-Nh-06A" secondAttribute="bottom" id="Xyq-QK-lCZ"/>
+                <constraint firstItem="Nlj-Nh-06A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="wF0-i3-I8G"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="42.028985507246382" y="-54.241071428571423"/>
+        </view>
+    </objects>
+</document>

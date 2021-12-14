@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="InviteNewCodeTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="484" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W1-jQ-URK" customClass="AMButton">
+                        <rect key="frame" x="174" y="140.5" width="136" height="34"/>
+                        <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="T6F-ve-Exd"/>
+                            <constraint firstAttribute="width" secondItem="3W1-jQ-URK" secondAttribute="height" multiplier="4" id="lYw-gB-hPH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="立即邀请"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickToInvite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RDO-gL-t1e"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdx-86-oTq">
+                        <rect key="frame" x="242" y="115.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-c6-W94">
+                        <rect key="frame" x="209" y="74.5" width="66.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="zdx-86-oTq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="70k-qP-aLc"/>
+                    <constraint firstItem="fdq-c6-W94" firstAttribute="centerX" secondItem="zdx-86-oTq" secondAttribute="centerX" id="7gl-bk-vjo"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="3W1-jQ-URK" secondAttribute="bottom" constant="15" id="B89-p1-VUJ"/>
+                    <constraint firstItem="fdq-c6-W94" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="Jji-pR-zCh"/>
+                    <constraint firstItem="3W1-jQ-URK" firstAttribute="top" secondItem="zdx-86-oTq" secondAttribute="bottom" constant="25" id="SMi-Of-Hep"/>
+                    <constraint firstItem="zdx-86-oTq" firstAttribute="top" secondItem="fdq-c6-W94" secondAttribute="bottom" constant="25" id="TVI-pD-35z"/>
+                    <constraint firstItem="3W1-jQ-URK" firstAttribute="centerX" secondItem="zdx-86-oTq" secondAttribute="centerX" id="dTh-3u-678"/>
+                    <constraint firstItem="zdx-86-oTq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zvp-1f-H3C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="codeLabel" destination="zdx-86-oTq" id="6NZ-lb-lbo"/>
+                <outlet property="inviteBtn" destination="3W1-jQ-URK" id="Q94-at-mlt"/>
+                <outlet property="titleLabel" destination="fdq-c6-W94" id="c1E-i7-kxx"/>
+            </connections>
+            <point key="canvasLocation" x="-120" y="-14"/>
+        </tableViewCell>
+    </objects>
+</document>

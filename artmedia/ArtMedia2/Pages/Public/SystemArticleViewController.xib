@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SystemArticleViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="dwv-Ne-vDr" id="wHC-8C-AxI"/>
+                <outlet property="confirmView" destination="gIX-14-p8Q" id="i82-wT-SUC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="BPy-sv-1vs" id="vIR-21-3e5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D43-D9-kmP">
+                    <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPy-sv-1vs" customClass="IMYWebView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="674"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIX-14-p8Q">
+                            <rect key="frame" x="0.0" y="684" width="375" height="84"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-Ne-vDr" customClass="AMButton">
+                                    <rect key="frame" x="15" y="0.0" width="345" height="40"/>
+                                    <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="BbW-3i-kP7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="阅读并同意"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="clickToConfirm:" destination="-1" eventType="touchUpInside" id="2nU-dX-qRh"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dwv-Ne-vDr" firstAttribute="trailing" secondItem="wch-rP-ZCP" secondAttribute="trailing" constant="-15" id="F11-Y8-TbU"/>
+                                <constraint firstItem="dwv-Ne-vDr" firstAttribute="leading" secondItem="wch-rP-ZCP" secondAttribute="leading" constant="15" id="NOk-P5-sdt"/>
+                                <constraint firstItem="dwv-Ne-vDr" firstAttribute="top" secondItem="gIX-14-p8Q" secondAttribute="top" id="lUb-Te-lJ0"/>
+                                <constraint firstItem="wch-rP-ZCP" firstAttribute="bottom" secondItem="dwv-Ne-vDr" secondAttribute="bottom" constant="10" id="tnm-4H-fBG"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="wch-rP-ZCP"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D43-D9-kmP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="G8x-xY-edh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="D43-D9-kmP" secondAttribute="trailing" id="JFD-Qd-WZj"/>
+                <constraint firstAttribute="bottom" secondItem="D43-D9-kmP" secondAttribute="bottom" id="ONb-B8-v3O"/>
+                <constraint firstItem="D43-D9-kmP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="uiz-6c-dYC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.21674876847291"/>
+        </view>
+    </objects>
+</document>

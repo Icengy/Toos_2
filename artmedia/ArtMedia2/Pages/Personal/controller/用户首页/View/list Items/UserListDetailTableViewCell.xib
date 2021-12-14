@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="UserListDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZV-09-3ee" customClass="AMButton">
+                        <rect key="frame" x="293" y="18" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YZV-09-3ee" secondAttribute="height" multiplier="2.5" id="kSD-Jz-66g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="已关注">
+                            <color key="titleColor" red="0.61568627450980395" green="0.63137254901960782" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.61568627450980395" green="0.63137254901960782" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Qe-cw-UJJ" customClass="AMIconImageView">
+                        <rect key="frame" x="15" y="7.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5Qe-cw-UJJ" secondAttribute="height" id="9cc-Yr-EWs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-PA-nei">
+                        <rect key="frame" x="68" y="7.5" width="217" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="QHj-Iu-HqD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzv-Fx-vw7" customClass="AMButton">
+                        <rect key="frame" x="68" y="37.5" width="59" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fzv-Fx-vw7" secondAttribute="height" multiplier="142:36" id="guB-sh-M5n"/>
+                        </constraints>
+                        <state key="normal" image="Per_艺术家认证"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fzv-Fx-vw7" firstAttribute="height" secondItem="5Qe-cw-UJJ" secondAttribute="height" multiplier="1:3" id="IJV-My-LIW"/>
+                    <constraint firstItem="lDv-PA-nei" firstAttribute="leading" secondItem="5Qe-cw-UJJ" secondAttribute="trailing" constant="8" id="QB9-fv-c0E"/>
+                    <constraint firstItem="fzv-Fx-vw7" firstAttribute="bottom" secondItem="5Qe-cw-UJJ" secondAttribute="bottom" id="QKQ-xr-Gcv"/>
+                    <constraint firstItem="5Qe-cw-UJJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bga-2C-YHg"/>
+                    <constraint firstItem="5Qe-cw-UJJ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.75" id="dei-Qh-0SH"/>
+                    <constraint firstItem="YZV-09-3ee" firstAttribute="leading" secondItem="lDv-PA-nei" secondAttribute="trailing" constant="8" id="g3K-IP-T8E"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YZV-09-3ee" secondAttribute="trailing" id="iy4-lx-3cT"/>
+                    <constraint firstItem="YZV-09-3ee" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jFb-0G-O5x"/>
+                    <constraint firstItem="YZV-09-3ee" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:2.5" id="sE7-NM-SJe"/>
+                    <constraint firstItem="5Qe-cw-UJJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tOf-Fc-p7R"/>
+                    <constraint firstItem="fzv-Fx-vw7" firstAttribute="leading" secondItem="5Qe-cw-UJJ" secondAttribute="trailing" constant="8" id="xhd-dC-588"/>
+                    <constraint firstItem="lDv-PA-nei" firstAttribute="top" secondItem="5Qe-cw-UJJ" secondAttribute="top" id="zsO-8D-zmv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="followedBtn" destination="YZV-09-3ee" id="CaR-2b-Hai"/>
+                <outlet property="headerIV" destination="5Qe-cw-UJJ" id="NoS-xd-l6c"/>
+                <outlet property="nameHeightConstraint" destination="QHj-Iu-HqD" id="OmD-uw-M1w"/>
+                <outlet property="userIdentifitionBtn" destination="fzv-Fx-vw7" id="cwq-JR-Hjy"/>
+                <outlet property="userNameLabel" destination="lDv-PA-nei" id="RN3-Y2-CyA"/>
+            </connections>
+            <point key="canvasLocation" x="110.40000000000001" y="152.92353823088456"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Per_艺术家认证" width="82" height="20"/>
+    </resources>
+</document>

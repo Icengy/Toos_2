@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="329" id="KGk-i7-Jjw" customClass="AMCourseEditCell">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="335"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="335"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入课程名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l78-V5-upf">
+                        <rect key="frame" x="15" y="15" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入课程名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5GO-TH-CGK" customClass="AMTextField">
+                        <rect key="frame" x="15" y="39.5" width="406" height="40"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="eEB-XA-nFJ"/>
+                        </constraints>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入课程简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE1-ja-rrP">
+                        <rect key="frame" x="15" y="99.5" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-o3-L1G">
+                        <rect key="frame" x="15" y="255.5" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8N-bi-zM5">
+                        <rect key="frame" x="15" y="280" width="160" height="40"/>
+                        <subviews>
+                            <button opaque="NO" tag="202010100" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxw-Gs-gnx" customClass="AMButton">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kxw-Gs-gnx" secondAttribute="height" multiplier="2" id="fHk-Zn-3Yd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="免费" image="course_free_normal">
+                                    <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="免费" image="course_free_select"/>
+                                <connections>
+                                    <action selector="clickToPaySetting:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OE2-s6-Oej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="202010101" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-6f-AVZ" customClass="AMButton">
+                                <rect key="frame" x="80" y="0.0" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x5q-6f-AVZ" secondAttribute="height" multiplier="2" id="xJD-7E-LIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="收费" image="course_free_normal">
+                                    <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="收费" image="course_free_select"/>
+                                <connections>
+                                    <action selector="clickToPaySetting:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nxa-po-ipS"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu9-Fq-f4d" customClass="AMCoursePriceEditView">
+                                <rect key="frame" x="160" y="0.0" width="0.0" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Odb-DE-C8U"/>
+                        </constraints>
+                    </stackView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vS-hK-jCS" customClass="AMTextView">
+                        <rect key="frame" x="15" y="124" width="406" height="111.5"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="sJ6-bg-j3K"/>
+                        </constraints>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aE1-ja-rrP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0aK-AE-TVW"/>
+                    <constraint firstItem="2vS-hK-jCS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1Ha-4F-2N7"/>
+                    <constraint firstAttribute="bottom" secondItem="o8N-bi-zM5" secondAttribute="bottom" constant="15" id="2zN-Li-B5Z"/>
+                    <constraint firstItem="2vS-hK-jCS" firstAttribute="top" secondItem="aE1-ja-rrP" secondAttribute="bottom" constant="10" id="Aw7-CL-hkU"/>
+                    <constraint firstItem="l78-V5-upf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="H9q-df-v1M"/>
+                    <constraint firstItem="aE1-ja-rrP" firstAttribute="top" secondItem="5GO-TH-CGK" secondAttribute="bottom" constant="20" id="KHy-iv-bjy"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o8N-bi-zM5" secondAttribute="trailing" constant="15" id="QsB-YV-N9P"/>
+                    <constraint firstItem="PJO-o3-L1G" firstAttribute="top" secondItem="2vS-hK-jCS" secondAttribute="bottom" constant="20" id="WnD-Jv-Vzq"/>
+                    <constraint firstItem="l78-V5-upf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZdU-9G-ERo"/>
+                    <constraint firstItem="PJO-o3-L1G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bAM-06-ALD"/>
+                    <constraint firstItem="5GO-TH-CGK" firstAttribute="top" secondItem="l78-V5-upf" secondAttribute="bottom" constant="10" id="buG-ox-lP2"/>
+                    <constraint firstAttribute="trailing" secondItem="5GO-TH-CGK" secondAttribute="trailing" constant="15" id="dWO-N3-QgQ"/>
+                    <constraint firstItem="o8N-bi-zM5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="n49-Zz-aVX"/>
+                    <constraint firstItem="o8N-bi-zM5" firstAttribute="top" secondItem="PJO-o3-L1G" secondAttribute="bottom" constant="10" id="qmr-sk-Rvq"/>
+                    <constraint firstItem="5GO-TH-CGK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="scg-EA-ZSw"/>
+                    <constraint firstAttribute="trailing" secondItem="2vS-hK-jCS" secondAttribute="trailing" constant="15" id="t2L-h9-nCF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descLabel" destination="aE1-ja-rrP" id="es4-fy-D4D"/>
+                <outlet property="descTF" destination="2vS-hK-jCS" id="fek-EE-MzY"/>
+                <outlet property="freeBtn" destination="Kxw-Gs-gnx" id="2SP-FT-qRr"/>
+                <outlet property="nonFreeBtn" destination="x5q-6f-AVZ" id="7s5-xv-9Iz"/>
+                <outlet property="payEditView" destination="lu9-Fq-f4d" id="aPk-VC-ekA"/>
+                <outlet property="payLabel" destination="PJO-o3-L1G" id="SXH-QD-7KQ"/>
+                <outlet property="titleLabel" destination="l78-V5-upf" id="4HP-Zp-yMZ"/>
+                <outlet property="titleTF" destination="5GO-TH-CGK" id="Btb-Sc-39m"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="28"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="5GO-TH-CGK">
+            <size key="intrinsicContentSize" width="100" height="18.5"/>
+        </designable>
+        <designable name="Kxw-Gs-gnx">
+            <size key="intrinsicContentSize" width="54" height="16"/>
+        </designable>
+        <designable name="x5q-6f-AVZ">
+            <size key="intrinsicContentSize" width="54" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="course_free_normal" width="15" height="15"/>
+        <image name="course_free_select" width="15" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

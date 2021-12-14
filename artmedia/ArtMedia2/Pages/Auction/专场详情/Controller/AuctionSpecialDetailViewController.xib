@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuctionSpecialDetailViewController">
+            <connections>
+                <outlet property="applyNumberPlateButton" destination="6CA-q8-xWf" id="8xb-iU-Z5H"/>
+                <outlet property="applyNumberPlateLabel" destination="Lay-tb-fjP" id="6h6-En-OjJ"/>
+                <outlet property="bottomView" destination="9Zg-Pa-5mk" id="u3H-QN-7Aj"/>
+                <outlet property="tableView" destination="pvM-wF-Kwd" id="0zd-6y-KJx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-l2-SCX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="pvM-wF-Kwd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zg-Pa-5mk">
+                            <rect key="frame" x="0.0" y="758" width="414" height="94"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPM-cy-DOD">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="Rgm-tG-aQd"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPs-x0-ywQ">
+                                    <rect key="frame" x="179.5" y="10" width="209.5" height="40"/>
+                                    <color key="backgroundColor" red="0.8784313725490196" green="0.32156862745098036" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="1y8-F0-rja"/>
+                                    </constraints>
+                                    <state key="normal" title="进入拍场"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="goActionLiveRoom:" destination="-1" eventType="touchUpInside" id="D3F-9V-xPZ"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-rQ-1Vv">
+                                    <rect key="frame" x="25" y="10" width="139.5" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的号牌：109" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lay-tb-fjP">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CA-q8-xWf" customClass="AMButton">
+                                            <rect key="frame" x="70" y="0.0" width="69.5" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="办理号牌">
+                                                <color key="titleColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.14117647058823529" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="applyNumberPlateClick:" destination="-1" eventType="touchUpInside" id="mkN-yN-AWb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6CA-q8-xWf" firstAttribute="width" secondItem="Lay-tb-fjP" secondAttribute="width" id="Ptd-mI-xQd"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="L2Y-H8-NmS"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="kPs-x0-ywQ" firstAttribute="leading" secondItem="hR7-rQ-1Vv" secondAttribute="trailing" constant="15" id="1x9-gu-dPJ"/>
+                                <constraint firstItem="kPs-x0-ywQ" firstAttribute="width" secondItem="hR7-rQ-1Vv" secondAttribute="width" multiplier="1.5" id="2O8-FV-bVg"/>
+                                <constraint firstItem="L2Y-H8-NmS" firstAttribute="trailing" secondItem="kPs-x0-ywQ" secondAttribute="trailing" constant="25" id="8vT-Ey-X2K"/>
+                                <constraint firstItem="L2Y-H8-NmS" firstAttribute="trailing" secondItem="gPM-cy-DOD" secondAttribute="trailing" id="JYr-Ml-jc7"/>
+                                <constraint firstItem="gPM-cy-DOD" firstAttribute="top" secondItem="9Zg-Pa-5mk" secondAttribute="top" id="Knv-cw-UqZ"/>
+                                <constraint firstItem="kPs-x0-ywQ" firstAttribute="centerY" secondItem="hR7-rQ-1Vv" secondAttribute="centerY" id="LAk-q8-ODs"/>
+                                <constraint firstItem="gPM-cy-DOD" firstAttribute="leading" secondItem="L2Y-H8-NmS" secondAttribute="leading" id="UJG-IP-uic"/>
+                                <constraint firstItem="hR7-rQ-1Vv" firstAttribute="leading" secondItem="L2Y-H8-NmS" secondAttribute="leading" constant="25" id="bSz-QJ-S9e"/>
+                                <constraint firstItem="kPs-x0-ywQ" firstAttribute="height" secondItem="hR7-rQ-1Vv" secondAttribute="height" id="c5P-qu-int"/>
+                                <constraint firstItem="L2Y-H8-NmS" firstAttribute="bottom" secondItem="kPs-x0-ywQ" secondAttribute="bottom" constant="10" id="djD-Aa-nse"/>
+                                <constraint firstItem="kPs-x0-ywQ" firstAttribute="top" secondItem="L2Y-H8-NmS" secondAttribute="top" constant="10" id="i0C-f6-f5F"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-hH-Spb" customClass="AMButton">
+                    <rect key="frame" x="359" y="752" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7OY-sg-RBr"/>
+                        <constraint firstAttribute="width" secondItem="pFt-hH-Spb" secondAttribute="height" id="meH-go-Piv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <state key="normal" image="money_out_rule"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickToRuler:" destination="-1" eventType="touchUpInside" id="CMF-sr-tlr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1Yo-l2-SCX" secondAttribute="trailing" id="4rA-Jq-hU0"/>
+                <constraint firstItem="1Yo-l2-SCX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7sY-l9-UQB"/>
+                <constraint firstItem="1Yo-l2-SCX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="GJe-Pa-VL1"/>
+                <constraint firstAttribute="bottom" secondItem="1Yo-l2-SCX" secondAttribute="bottom" id="LRe-iL-LPa"/>
+                <constraint firstItem="pFt-hH-Spb" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="-15" id="ZFX-qM-wQE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="pFt-hH-Spb" secondAttribute="bottom" constant="70" id="sxf-2v-6tZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-39.130434782608695" y="-21.428571428571427"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6CA-q8-xWf">
+            <size key="intrinsicContentSize" width="58" height="29"/>
+        </designable>
+        <designable name="pFt-hH-Spb">
+            <size key="intrinsicContentSize" width="41" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="money_out_rule" width="41" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

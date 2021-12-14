@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyInviterView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fm-6q-9II">
+                    <rect key="frame" x="52" y="257" width="310.5" height="292"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibK-pf-5Gt" customClass="AMButton">
+                            <rect key="frame" x="269.5" y="15" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="BRD-vt-hNb"/>
+                                <constraint firstAttribute="width" constant="26" id="Cju-QY-0Xa"/>
+                            </constraints>
+                            <state key="normal" image="dialog_close"/>
+                            <connections>
+                                <action selector="clickToBack:" destination="iN0-l3-epB" eventType="touchUpInside" id="D7r-vZ-LWT"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-XD-ujQ">
+                            <rect key="frame" x="25" y="92.5" width="260.5" height="100"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEt-Rw-HRG" customClass="MyInviterItemFillView">
+                                    <rect key="frame" x="0.0" y="0.0" width="260.5" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="swY-hi-aXm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4G2-IS-Iei" customClass="MyInviterItemFilledView">
+                                    <rect key="frame" x="0.0" y="50" width="260.5" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="y9u-XH-FLq"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尚未添加我的邀请人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-EJ-am8">
+                            <rect key="frame" x="20" y="46" width="165.5" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QPx-sv-E68">
+                            <rect key="frame" x="20" y="212.5" width="270.5" height="64.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs8-mG-78h">
+                                    <rect key="frame" x="0.0" y="0.0" width="270.5" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.75686274509999996" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="SSh-FC-UUM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="确定"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="clickToConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="6E1-fT-8ph"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有且仅能添加一次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYT-Du-TPd">
+                                    <rect key="frame" x="0.0" y="50" width="270.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.70588235294117641" green="0.72156862745098038" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nf9-XD-ujQ" secondAttribute="trailing" constant="25" id="Ep0-dz-vtq"/>
+                        <constraint firstAttribute="bottom" secondItem="QPx-sv-E68" secondAttribute="bottom" constant="15" id="FW4-61-Pil"/>
+                        <constraint firstItem="ibK-pf-5Gt" firstAttribute="top" secondItem="0Fm-6q-9II" secondAttribute="top" constant="15" id="Iro-P4-ANb"/>
+                        <constraint firstItem="ot6-EJ-am8" firstAttribute="leading" secondItem="0Fm-6q-9II" secondAttribute="leading" constant="20" id="K4c-6Y-Bqm"/>
+                        <constraint firstItem="ot6-EJ-am8" firstAttribute="top" secondItem="ibK-pf-5Gt" secondAttribute="bottom" constant="5" id="L3j-96-azb"/>
+                        <constraint firstItem="QPx-sv-E68" firstAttribute="leading" secondItem="0Fm-6q-9II" secondAttribute="leading" constant="20" id="Uik-yq-6iX"/>
+                        <constraint firstAttribute="trailing" secondItem="QPx-sv-E68" secondAttribute="trailing" constant="20" id="YRu-kp-GCo"/>
+                        <constraint firstItem="nf9-XD-ujQ" firstAttribute="top" secondItem="ot6-EJ-am8" secondAttribute="bottom" constant="25" id="ZNh-R6-UDw"/>
+                        <constraint firstItem="QPx-sv-E68" firstAttribute="top" secondItem="nf9-XD-ujQ" secondAttribute="bottom" constant="20" id="adb-O1-yRm"/>
+                        <constraint firstAttribute="trailing" secondItem="ibK-pf-5Gt" secondAttribute="trailing" constant="15" id="eNR-gN-Fpm"/>
+                        <constraint firstItem="nf9-XD-ujQ" firstAttribute="leading" secondItem="0Fm-6q-9II" secondAttribute="leading" constant="25" id="lbd-VS-7ib"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ot6-EJ-am8" secondAttribute="trailing" constant="20" id="x6c-uU-njA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0Fm-6q-9II" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="EP0-Gp-wRj"/>
+                <constraint firstItem="0Fm-6q-9II" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KXR-Yf-phK"/>
+                <constraint firstItem="0Fm-6q-9II" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="O3A-Wl-T5q"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="0Fm-6q-9II" id="kZT-rf-a57"/>
+                <outlet property="coonfirmBtn" destination="cs8-mG-78h" id="QXY-oy-m5t"/>
+                <outlet property="fillView" destination="BEt-Rw-HRG" id="QVd-kA-JmB"/>
+                <outlet property="filledView" destination="4G2-IS-Iei" id="hqk-Mx-BWU"/>
+                <outlet property="tipsLabel" destination="VYT-Du-TPd" id="TRg-Ci-U4a"/>
+                <outlet property="titleLabel" destination="ot6-EJ-am8" id="ABG-xf-4eO"/>
+            </connections>
+            <point key="canvasLocation" x="-84.057971014492765" y="-24.776785714285712"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ibK-pf-5Gt">
+            <size key="intrinsicContentSize" width="16" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="dialog_close" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meeting Main View Controller-->
+        <scene sceneID="j4o-7u-tEW">
+            <objects>
+                <viewController storyboardIdentifier="AMMeetingMainViewController" id="Ztf-Hn-jJO" customClass="AMMeetingMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWD-6p-pfW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65O-q8-V9m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qrt-Jl-nyi">
+                                <rect key="frame" x="364" y="248" width="35" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-z8-UN3" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="dwv-S7-emu"/>
+                                            <constraint firstAttribute="width" secondItem="X0f-z8-UN3" secondAttribute="height" id="xgl-r3-z89"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-切换布局"/>
+                                        <connections>
+                                            <action selector="onClickGird:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="HG0-Y9-GeT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELo-Pd-4eu" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="55" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Ab6-ki-tRM"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-成员列表"/>
+                                        <connections>
+                                            <action selector="onClickMemberButton:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="vkY-j5-ENi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS8-ZO-oSM" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="110" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="cK1-jb-GHh"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-美颜"/>
+                                        <connections>
+                                            <action selector="onClickBeautyButton:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="A9r-4y-Y4n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-cK-ddK" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="165" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="eaT-AZ-sdw"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-前后置摄像头"/>
+                                        <connections>
+                                            <action selector="onClickSwitchCameraButton:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="edq-QI-LvM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-Dw-x8C" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="220" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="TWb-VI-UoX"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-麦克风开"/>
+                                        <state key="selected" image="meetingroom-麦克风关"/>
+                                        <connections>
+                                            <action selector="onClickMuteButton:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="vj2-J4-09b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njU-LS-grx" customClass="AMButton">
+                                        <rect key="frame" x="0.0" y="275" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="C1K-Os-qdT"/>
+                                        </constraints>
+                                        <state key="normal" image="meetingroom-管理"/>
+                                        <connections>
+                                            <action selector="onClickManagerButton:" destination="Ztf-Hn-jJO" eventType="touchUpInside" id="XaB-pM-q7b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="njU-LS-grx" firstAttribute="width" secondItem="njU-LS-grx" secondAttribute="height" id="Bfd-vT-Zkh"/>
+                                    <constraint firstItem="1FE-cK-ddK" firstAttribute="width" secondItem="1FE-cK-ddK" secondAttribute="height" id="FKR-Wg-FzC"/>
+                                    <constraint firstItem="fS8-ZO-oSM" firstAttribute="width" secondItem="fS8-ZO-oSM" secondAttribute="height" id="bjH-Mj-qNc"/>
+                                    <constraint firstItem="ELo-Pd-4eu" firstAttribute="width" secondItem="ELo-Pd-4eu" secondAttribute="height" id="lw6-Mx-f70"/>
+                                    <constraint firstItem="HOp-Dw-x8C" firstAttribute="width" secondItem="HOp-Dw-x8C" secondAttribute="height" id="sHw-58-pFC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TEq-Vr-Mxu" userLabel="Function Stack View">
+                                <rect key="frame" x="0.0" y="852" width="414" height="0.0"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-vf-2Yj" customClass="TCBeautyPanel">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="172" id="1GM-Oy-QSf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h7E-vf-2Yj" firstAttribute="width" secondItem="TEq-Vr-Mxu" secondAttribute="width" id="aUD-TY-rFS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s3o-Qx-K8W">
+                                <rect key="frame" x="0.0" y="798" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="DeU-jc-6Tm"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCz-Ao-d0p">
+                                <rect key="frame" x="147" y="64" width="120" height="30.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余时间：00:10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-0h-lp6">
+                                        <rect key="frame" x="4" y="8" width="112" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.88627450980392153" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="d7o-0h-lp6" secondAttribute="bottom" constant="8" id="4f8-cD-aQu"/>
+                                    <constraint firstItem="d7o-0h-lp6" firstAttribute="top" secondItem="rCz-Ao-d0p" secondAttribute="top" constant="8" id="VG6-kN-lbH"/>
+                                    <constraint firstAttribute="trailing" secondItem="d7o-0h-lp6" secondAttribute="trailing" constant="4" id="b8V-xn-Eu2"/>
+                                    <constraint firstItem="d7o-0h-lp6" firstAttribute="leading" secondItem="rCz-Ao-d0p" secondAttribute="leading" constant="4" id="wUp-dB-7r8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jjc-dX-xr3"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="s3o-Qx-K8W" firstAttribute="leading" secondItem="Jjc-dX-xr3" secondAttribute="leading" id="2L2-fw-EYj"/>
+                            <constraint firstItem="65O-q8-V9m" firstAttribute="leading" secondItem="Jjc-dX-xr3" secondAttribute="leading" id="FSH-oa-1vN"/>
+                            <constraint firstItem="65O-q8-V9m" firstAttribute="trailing" secondItem="Jjc-dX-xr3" secondAttribute="trailing" id="PaV-dY-dk1"/>
+                            <constraint firstItem="Jjc-dX-xr3" firstAttribute="trailing" secondItem="s3o-Qx-K8W" secondAttribute="trailing" id="Pvh-Xe-qEt"/>
+                            <constraint firstItem="TEq-Vr-Mxu" firstAttribute="leading" secondItem="Jjc-dX-xr3" secondAttribute="leading" id="TyS-OH-avB"/>
+                            <constraint firstItem="65O-q8-V9m" firstAttribute="top" secondItem="CWD-6p-pfW" secondAttribute="top" id="Vto-cE-zLk"/>
+                            <constraint firstItem="rCz-Ao-d0p" firstAttribute="centerX" secondItem="Jjc-dX-xr3" secondAttribute="centerX" id="ZWx-3l-olq"/>
+                            <constraint firstItem="Jjc-dX-xr3" firstAttribute="bottom" secondItem="TEq-Vr-Mxu" secondAttribute="bottom" constant="10" id="dys-Ki-AIi"/>
+                            <constraint firstItem="rCz-Ao-d0p" firstAttribute="top" secondItem="Jjc-dX-xr3" secondAttribute="top" constant="20" id="iaC-2z-bSz"/>
+                            <constraint firstItem="Jjc-dX-xr3" firstAttribute="trailing" secondItem="TEq-Vr-Mxu" secondAttribute="trailing" id="mcZ-aS-Ckm"/>
+                            <constraint firstItem="qrt-Jl-nyi" firstAttribute="centerY" secondItem="CWD-6p-pfW" secondAttribute="centerY" multiplier="0.9" id="scb-fb-CrY"/>
+                            <constraint firstItem="TEq-Vr-Mxu" firstAttribute="top" secondItem="s3o-Qx-K8W" secondAttribute="bottom" constant="10" id="t1g-pZ-RqH"/>
+                            <constraint firstAttribute="bottom" secondItem="65O-q8-V9m" secondAttribute="bottom" id="zOb-za-Uqq"/>
+                            <constraint firstItem="Jjc-dX-xr3" firstAttribute="trailing" secondItem="qrt-Jl-nyi" secondAttribute="trailing" constant="15" id="zy2-ef-EFh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beautyButton" destination="fS8-ZO-oSM" id="9HI-az-4eD"/>
+                        <outlet property="beautyPanel" destination="h7E-vf-2Yj" id="nYx-rt-X9D"/>
+                        <outlet property="cameraButton" destination="1FE-cK-ddK" id="SEs-be-8Ei"/>
+                        <outlet property="holderView" destination="65O-q8-V9m" id="xmA-Jf-0uC"/>
+                        <outlet property="layoutButton" destination="X0f-z8-UN3" id="bP0-3n-tb1"/>
+                        <outlet property="managerButton" destination="njU-LS-grx" id="MNX-Cf-Cxq"/>
+                        <outlet property="memberButton" destination="ELo-Pd-4eu" id="6qM-Hb-gsv"/>
+                        <outlet property="muteButton" destination="HOp-Dw-x8C" id="ugw-F8-csY"/>
+                        <outlet property="timingLabel" destination="d7o-0h-lp6" id="abH-oc-tGt"/>
+                        <outlet property="timingView" destination="rCz-Ao-d0p" id="bdR-qN-wdM"/>
+                        <outlet property="toastStackView" destination="s3o-Qx-K8W" id="wvY-KP-tk0"/>
+                        <outlet property="toolsStackView" destination="qrt-Jl-nyi" id="6h4-R9-xd9"/>
+                        <outlet property="toolsStack_trailing_constraint" destination="zy2-ef-EFh" id="XaX-8g-RpP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC4-N6-1zW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723.1884057971015" y="10.714285714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1FE-cK-ddK">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="ELo-Pd-4eu">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="HOp-Dw-x8C">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="X0f-z8-UN3">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="fS8-ZO-oSM">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="njU-LS-grx">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="meetingroom-切换布局" width="35" height="35"/>
+        <image name="meetingroom-前后置摄像头" width="35" height="35"/>
+        <image name="meetingroom-成员列表" width="35" height="35"/>
+        <image name="meetingroom-管理" width="35" height="35"/>
+        <image name="meetingroom-美颜" width="35" height="35"/>
+        <image name="meetingroom-麦克风关" width="37.5" height="37.5"/>
+        <image name="meetingroom-麦克风开" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

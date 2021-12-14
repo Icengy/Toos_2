@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAdressViewController">
+            <connections>
+                <outlet property="finishBtn" destination="KKC-na-BdS" id="yqy-rO-WJJ"/>
+                <outlet property="tableView" destination="FKb-TB-tzU" id="RaE-h7-rnN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Dfy-EW-pp9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKC-na-BdS" customClass="AMButton">
+                    <rect key="frame" x="15" y="812" width="384" height="40"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="H1w-OQ-ihy"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="editAddress:" destination="-1" eventType="touchUpInside" id="Dhd-9S-nQl"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-TB-tzU" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="KKC-na-BdS" firstAttribute="top" secondItem="FKb-TB-tzU" secondAttribute="bottom" constant="10" id="0xS-Ay-7Vs"/>
+                <constraint firstItem="KKC-na-BdS" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-10" id="7Bp-oG-rQA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KKC-na-BdS" secondAttribute="trailing" constant="15" id="VrK-jz-nON"/>
+                <constraint firstItem="FKb-TB-tzU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VvH-Vf-D4D"/>
+                <constraint firstItem="FKb-TB-tzU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X9w-HX-sbl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FKb-TB-tzU" secondAttribute="trailing" id="jGH-JD-Qc4"/>
+                <constraint firstItem="KKC-na-BdS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="u27-C2-ZSR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="154"/>
+        </view>
+    </objects>
+</document>

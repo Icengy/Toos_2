@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PublishResultIDCardTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="321"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得艺术品身份证：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2x-lU-Xba">
+                        <rect key="frame" x="175.5" y="21.5" width="120" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eh9-lJ-SYc">
+                        <rect key="frame" x="15" y="47.5" width="441" height="273.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Eh9-lJ-SYc" secondAttribute="height" multiplier="511:317" id="cBT-qN-rEf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M2x-lU-Xba" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2dM-if-yVJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Eh9-lJ-SYc" secondAttribute="bottom" id="Arx-BJ-aYr"/>
+                    <constraint firstItem="Eh9-lJ-SYc" firstAttribute="top" secondItem="M2x-lU-Xba" secondAttribute="bottom" constant="10" id="Ldy-Rq-VqE"/>
+                    <constraint firstItem="M2x-lU-Xba" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Rk3-7w-C74"/>
+                    <constraint firstAttribute="trailing" secondItem="Eh9-lJ-SYc" secondAttribute="trailing" constant="15" id="idg-FP-UfS"/>
+                    <constraint firstItem="Eh9-lJ-SYc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sX5-US-27c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="idCardIV" destination="Eh9-lJ-SYc" id="GWC-6a-XAm"/>
+                <outlet property="titleLabel" destination="M2x-lU-Xba" id="F3i-cs-ZCQ"/>
+            </connections>
+            <point key="canvasLocation" x="93.478260869565219" y="49.21875"/>
+        </tableViewCell>
+    </objects>
+</document>

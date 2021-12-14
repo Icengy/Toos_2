@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoodsImagesCell" id="gTV-IL-0wX" customClass="GoodsImagesCell">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xm-g6-edY" customClass="AMButton">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                        <state key="normal" image="AddImage">
+                            <color key="titleColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickToAddImage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dMy-Vc-XTd"/>
+                        </connections>
+                    </button>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-2j-xZj">
+                        <rect key="frame" x="5" y="5" width="134" height="134"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6k-s0-WQl" customClass="AMButton">
+                        <rect key="frame" x="124" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="40z-Gv-bZm"/>
+                            <constraint firstAttribute="width" constant="20" id="hBS-Zh-pK2"/>
+                        </constraints>
+                        <state key="normal" image="delete_img_red"/>
+                        <connections>
+                            <action selector="clickToDeleteGoodsIV:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aGi-E8-XoI"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="2Xm-g6-edY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Nh-rW-LL2"/>
+                <constraint firstAttribute="bottom" secondItem="cKW-2j-xZj" secondAttribute="bottom" constant="5" id="4rS-M3-4Lh"/>
+                <constraint firstItem="m6k-s0-WQl" firstAttribute="trailing" secondItem="cKW-2j-xZj" secondAttribute="trailing" constant="5" id="Jvr-49-XLE"/>
+                <constraint firstItem="cKW-2j-xZj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="KKJ-mP-pO7"/>
+                <constraint firstItem="cKW-2j-xZj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="KYq-qK-BAE"/>
+                <constraint firstItem="m6k-s0-WQl" firstAttribute="top" secondItem="cKW-2j-xZj" secondAttribute="top" constant="-5" id="Ohi-4w-eUS"/>
+                <constraint firstItem="2Xm-g6-edY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qnx-p9-2m3"/>
+                <constraint firstAttribute="bottom" secondItem="2Xm-g6-edY" secondAttribute="bottom" id="opl-2Y-IY1"/>
+                <constraint firstAttribute="trailing" secondItem="cKW-2j-xZj" secondAttribute="trailing" constant="5" id="rhc-aB-xAQ"/>
+                <constraint firstAttribute="trailing" secondItem="2Xm-g6-edY" secondAttribute="trailing" id="yuP-CA-GbI"/>
+            </constraints>
+            <size key="customSize" width="111" height="117"/>
+            <connections>
+                <outlet property="addImageBtn" destination="2Xm-g6-edY" id="Qq1-mO-5UO"/>
+                <outlet property="deleteBtn" destination="m6k-s0-WQl" id="ndD-rv-xKG"/>
+                <outlet property="goodsIV" destination="cKW-2j-xZj" id="xOW-s2-z6D"/>
+            </connections>
+            <point key="canvasLocation" x="73.599999999999994" y="115.14242878560721"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="2Xm-g6-edY">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+        <designable name="m6k-s0-WQl">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="AddImage" width="80" height="80"/>
+        <image name="delete_img_red" width="24" height="24"/>
+    </resources>
+</document>

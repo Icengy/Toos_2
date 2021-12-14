@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteNewViewController">
+            <connections>
+                <outlet property="countLabel" destination="kXA-EK-grj" id="WhV-c3-4Cu"/>
+                <outlet property="tableView" destination="rx6-Ql-QcQ" id="Kv4-Rn-Aub"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rx6-Ql-QcQ" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已成功邀请0人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXA-EK-grj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qD1-wV-jYd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.82745098039215681" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rx6-Ql-QcQ" secondAttribute="trailing" id="4S5-tN-Zw2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kXA-EK-grj" secondAttribute="trailing" id="9Ag-F6-d69"/>
+                <constraint firstItem="kXA-EK-grj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="GKJ-OV-yj3"/>
+                <constraint firstItem="kXA-EK-grj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NWv-TG-I8u"/>
+                <constraint firstItem="rx6-Ql-QcQ" firstAttribute="top" secondItem="kXA-EK-grj" secondAttribute="bottom" id="QXJ-NZ-Hak"/>
+                <constraint firstAttribute="bottom" secondItem="rx6-Ql-QcQ" secondAttribute="bottom" id="R9e-2k-s1w"/>
+                <constraint firstItem="rx6-Ql-QcQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="l8u-5s-ztZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="140.57971014492756" y="135.9375"/>
+        </view>
+    </objects>
+</document>

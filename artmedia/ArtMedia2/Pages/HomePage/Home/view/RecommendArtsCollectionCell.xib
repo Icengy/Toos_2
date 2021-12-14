@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendArtsCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈振濂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24m-yn-uaI">
+                        <rect key="frame" x="42.5" y="97" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="GuO-fq-7VN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国文联副主席" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-MD-gdL">
+                        <rect key="frame" x="23" y="117" width="79" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="xDV-YI-lYy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZWZ-79-m0h" customClass="AMIconImageView">
+                        <rect key="frame" x="24" y="10" width="77" height="77"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZWZ-79-m0h" secondAttribute="height" id="p8d-On-OSz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="24m-yn-uaI" firstAttribute="top" secondItem="ZWZ-79-m0h" secondAttribute="bottom" constant="10" id="3ov-zL-O4z"/>
+                <constraint firstItem="24m-yn-uaI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="LLW-wD-diz"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="24m-yn-uaI" secondAttribute="trailing" constant="2" id="PVw-Ui-Ooz"/>
+                <constraint firstItem="ZWZ-79-m0h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="TGq-vd-PTR"/>
+                <constraint firstAttribute="bottom" secondItem="ke7-MD-gdL" secondAttribute="bottom" constant="8" id="TrQ-JH-48w"/>
+                <constraint firstItem="ZWZ-79-m0h" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="a2E-V1-zjY"/>
+                <constraint firstItem="ke7-MD-gdL" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="c4U-jK-n5q"/>
+                <constraint firstItem="ke7-MD-gdL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="csy-WW-vhg"/>
+                <constraint firstItem="ke7-MD-gdL" firstAttribute="top" secondItem="24m-yn-uaI" secondAttribute="bottom" id="oQg-GW-Hmy"/>
+                <constraint firstItem="24m-yn-uaI" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="p6r-mz-Idd"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ke7-MD-gdL" secondAttribute="trailing" constant="2" id="s7o-WF-Ahi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="102" height="151"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="logoIV" destination="ZWZ-79-m0h" id="eTv-32-bVG"/>
+                <outlet property="nameLabel" destination="24m-yn-uaI" id="lvB-o4-DOA"/>
+                <outlet property="titleLabel" destination="ke7-MD-gdL" id="MTG-cy-Hhg"/>
+            </connections>
+            <point key="canvasLocation" x="-150" y="47"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="80" height="80"/>
+    </resources>
+</document>

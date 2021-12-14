@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscussMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52Q-RD-3GF">
+                    <rect key="frame" x="0.0" y="702" width="414" height="194"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ila-nl-cHg">
+                            <rect key="frame" x="0.0" y="10" width="414" height="150"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="BXO-bR-lXr"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="1sk-rU-tNE" firstAttribute="bottom" secondItem="Ila-nl-cHg" secondAttribute="bottom" id="3Jf-Aw-LfO"/>
+                        <constraint firstItem="Ila-nl-cHg" firstAttribute="leading" secondItem="52Q-RD-3GF" secondAttribute="leading" id="A3G-1B-nFQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ila-nl-cHg" secondAttribute="trailing" id="KF4-Xv-8vd"/>
+                        <constraint firstItem="Ila-nl-cHg" firstAttribute="top" secondItem="1sk-rU-tNE" secondAttribute="top" constant="10" id="a87-ds-TqH"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="1sk-rU-tNE"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="52Q-RD-3GF" secondAttribute="bottom" id="14o-EO-Z0w"/>
+                <constraint firstItem="52Q-RD-3GF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MVB-o7-PjQ"/>
+                <constraint firstAttribute="trailing" secondItem="52Q-RD-3GF" secondAttribute="trailing" id="yqe-AL-zdv"/>
+            </constraints>
+            <connections>
+                <outlet property="conentView" destination="52Q-RD-3GF" id="prB-EQ-5YG"/>
+                <outlet property="tableView" destination="Ila-nl-cHg" id="cxB-me-kza"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="136.60714285714286"/>
+        </view>
+    </objects>
+</document>

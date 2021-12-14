@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartupPageViewController">
+            <connections>
+                <outlet property="collectionView" destination="1jz-A3-XYb" id="Yz2-13-2jv"/>
+                <outlet property="pageControl" destination="LSN-uO-Mhw" id="7EY-xN-GxD"/>
+                <outlet property="startBtn" destination="F2r-h4-7dL" id="SHj-p6-nG0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1jz-A3-XYb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vgk-qC-0Bj">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-h4-7dL" customClass="AMButton">
+                    <rect key="frame" x="103.5" y="802" width="207" height="45"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.43137254901960786" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="6eO-yr-1me"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="立即体验"/>
+                    <connections>
+                        <action selector="clickToStart:" destination="-1" eventType="touchUpInside" id="JOs-Bn-ntX"/>
+                    </connections>
+                </button>
+
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LSN-uO-Mhw">
+                    <rect key="frame" x="136.5" y="761" width="141" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.97647058823529409" green="0.43137254901960786" blue="0.13333333333333333" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.97647058823529409" green="0.43137254901960786" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1jz-A3-XYb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="1eo-iQ-8Dw"/>
+                <constraint firstItem="F2r-h4-7dL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5OP-jq-Aye"/>
+                <constraint firstItem="1jz-A3-XYb" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="9fa-sc-GhT"/>
+                <constraint firstItem="LSN-uO-Mhw" firstAttribute="height" secondItem="F2r-h4-7dL" secondAttribute="height" multiplier="0.822222" id="Gyf-IH-6Xa"/>
+                <constraint firstItem="1jz-A3-XYb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vko-4h-r6l"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="F2r-h4-7dL" secondAttribute="bottom" constant="15" id="YFG-zc-Dd9"/>
+                <constraint firstItem="F2r-h4-7dL" firstAttribute="centerX" secondItem="LSN-uO-Mhw" secondAttribute="centerX" id="Z8Z-aL-sIQ"/>
+                <constraint firstItem="F2r-h4-7dL" firstAttribute="top" secondItem="LSN-uO-Mhw" secondAttribute="bottom" constant="4" id="fRQ-IO-FnH"/>
+                <constraint firstAttribute="bottom" secondItem="1jz-A3-XYb" secondAttribute="bottom" id="pjS-cl-d09"/>
+                <constraint firstItem="F2r-h4-7dL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2" id="vIE-Gx-xQy"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="F2r-h4-7dL">
+            <size key="intrinsicContentSize" width="74" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

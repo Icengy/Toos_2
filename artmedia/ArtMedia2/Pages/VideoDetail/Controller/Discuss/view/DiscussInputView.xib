@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscussInputView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-Zm-RAN">
+                    <rect key="frame" x="0.0" y="797" width="414" height="99"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-3V-t64" customClass="AMTextView">
+                            <rect key="frame" x="15" y="10" width="309" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="s3l-Mc-FMu"/>
+                            </constraints>
+                            <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-DU-Ubn" customClass="AMButton">
+                            <rect key="frame" x="339" y="5" width="75" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Jz9-DU-Ubn" secondAttribute="height" multiplier="1.5" id="B3T-7Z-H7r"/>
+                                <constraint firstAttribute="height" constant="50" id="Bqe-gM-NLU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.066666666669999999" green="0.4039215686" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="disabled" title="发送">
+                                <color key="titleColor" red="0.70588235290000001" green="0.72156862749999995" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickToFinish:" destination="iN0-l3-epB" eventType="touchUpInside" id="hZg-9q-Pye"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-9c-Y8V">
+                            <rect key="frame" x="15" y="60" width="309" height="1"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="aIn-et-wxd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="zQ0-03-IMx"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Jz9-DU-Ubn" firstAttribute="centerY" secondItem="9Pe-3V-t64" secondAttribute="centerY" id="5G5-lK-98l"/>
+                        <constraint firstItem="9Pe-3V-t64" firstAttribute="top" secondItem="yAW-Zm-RAN" secondAttribute="top" constant="10" id="5mU-47-3IK"/>
+                        <constraint firstItem="rXK-9c-Y8V" firstAttribute="width" secondItem="9Pe-3V-t64" secondAttribute="width" id="8nI-uI-xNz"/>
+                        <constraint firstItem="zQ0-03-IMx" firstAttribute="bottom" secondItem="9Pe-3V-t64" secondAttribute="bottom" constant="15" id="LYd-Pp-bzm"/>
+                        <constraint firstAttribute="trailing" secondItem="Jz9-DU-Ubn" secondAttribute="trailing" id="OZo-Uq-8nH"/>
+                        <constraint firstItem="Jz9-DU-Ubn" firstAttribute="leading" secondItem="9Pe-3V-t64" secondAttribute="trailing" constant="15" id="VKp-yt-jNm"/>
+                        <constraint firstItem="9Pe-3V-t64" firstAttribute="leading" secondItem="yAW-Zm-RAN" secondAttribute="leading" constant="15" id="bdi-TY-t03"/>
+                        <constraint firstItem="rXK-9c-Y8V" firstAttribute="centerX" secondItem="9Pe-3V-t64" secondAttribute="centerX" id="hp0-Lx-PPR"/>
+                        <constraint firstItem="zQ0-03-IMx" firstAttribute="bottom" secondItem="rXK-9c-Y8V" secondAttribute="bottom" constant="4" id="whG-PH-JRl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yAW-Zm-RAN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LrO-3q-hDV"/>
+                <constraint firstAttribute="bottom" secondItem="yAW-Zm-RAN" secondAttribute="bottom" id="gn8-9F-Yh7"/>
+                <constraint firstItem="yAW-Zm-RAN" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="kiS-nH-WC9"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="yAW-Zm-RAN" id="Skb-YC-h2F"/>
+                <outlet property="finishBtn" destination="Jz9-DU-Ubn" id="biJ-L4-RBz"/>
+                <outlet property="inputBottomConstraint" destination="whG-PH-JRl" id="Mpx-TQ-hxd"/>
+                <outlet property="inputHeightConstraint" destination="s3l-Mc-FMu" id="zql-yz-3bs"/>
+                <outlet property="inputView" destination="9Pe-3V-t64" id="jFQ-l4-HkI"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="122"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Jz9-DU-Ubn">
+            <size key="intrinsicContentSize" width="33" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="PersonalWalletTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttQ-5c-wOn">
+                        <rect key="frame" x="15" y="22" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNO-tK-AaO" customClass="AMReverseButton">
+                        <rect key="frame" x="398" y="11" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="b2f-MF-oyv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="收款账户" image="mine_right_aw">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickToAccount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mUe-Ds-N2P"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-27-JTj">
+                        <rect key="frame" x="0.0" y="51" width="513" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvN-Wg-JzI" customClass="PersonalWalletItemView">
+                                <rect key="frame" x="0.0" y="0.0" width="256.5" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-Vs-iM5" customClass="PersonalWalletItemView">
+                                <rect key="frame" x="256.5" y="0.0" width="256.5" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-TL-ngt" customClass="PersonalWalletItemView">
+                                <rect key="frame" x="513" y="0.0" width="256.5" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Uxi-Od-FDY"/>
+                            <constraint firstItem="QO3-Vs-iM5" firstAttribute="width" secondItem="RvN-Wg-JzI" secondAttribute="width" id="VR9-Pa-GwL"/>
+                            <constraint firstItem="j2c-TL-ngt" firstAttribute="width" secondItem="RvN-Wg-JzI" secondAttribute="width" id="oYG-Yk-9di"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="NNO-tK-AaO" firstAttribute="width" secondItem="NNO-tK-AaO" secondAttribute="height" multiplier="2" id="0ln-b3-A0e"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NNO-tK-AaO" secondAttribute="trailing" constant="15" id="DxI-LE-11n"/>
+                    <constraint firstItem="ttQ-5c-wOn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HP4-J0-Uwh"/>
+                    <constraint firstItem="NNO-tK-AaO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RNh-06-fxK"/>
+                    <constraint firstItem="NNO-tK-AaO" firstAttribute="centerY" secondItem="ttQ-5c-wOn" secondAttribute="centerY" id="fd7-HD-CHQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Tbt-27-JTj" secondAttribute="bottom" id="hAm-zY-sas"/>
+                    <constraint firstItem="Tbt-27-JTj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mVl-St-ojA"/>
+                    <constraint firstAttribute="trailing" secondItem="Tbt-27-JTj" secondAttribute="trailing" id="nz2-Sw-6g4"/>
+                    <constraint firstItem="Tbt-27-JTj" firstAttribute="top" secondItem="NNO-tK-AaO" secondAttribute="bottom" id="pCo-5m-XMw"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="accountBtn" destination="NNO-tK-AaO" id="dMv-v0-GYN"/>
+                <outlet property="balanceItem" destination="RvN-Wg-JzI" id="5mn-s5-raK"/>
+                <outlet property="estimateItem" destination="QO3-Vs-iM5" id="op1-YY-bkq"/>
+                <outlet property="integralItem" destination="j2c-TL-ngt" id="S89-xK-rRv"/>
+                <outlet property="stackView" destination="Tbt-27-JTj" id="p7g-Qe-9qt"/>
+                <outlet property="titleLbale" destination="ttQ-5c-wOn" id="F2a-dc-kHF"/>
+            </connections>
+            <point key="canvasLocation" x="277.536231884058" y="-97.433035714285708"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="NNO-tK-AaO">
+            <size key="intrinsicContentSize" width="60" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="mine_right_aw" width="6" height="12"/>
+    </resources>
+</document>

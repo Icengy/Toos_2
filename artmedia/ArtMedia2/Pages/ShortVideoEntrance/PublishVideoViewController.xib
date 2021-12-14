@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishVideoViewController">
+            <connections>
+                <outlet property="agreeBtn" destination="kbf-Dt-7ER" id="2Bt-HV-d2i"/>
+                <outlet property="agreeLabel" destination="Spg-X8-DBA" id="VtT-8P-UEk"/>
+                <outlet property="agreeTipsLabel" destination="0gg-ij-cB7" id="qnO-dg-8Xz"/>
+                <outlet property="agreeView" destination="H8E-3U-ftB" id="nT4-Nc-gD6"/>
+                <outlet property="deleteBtn" destination="jdy-N9-czp" id="2q0-Dw-tMu"/>
+                <outlet property="generateView" destination="Fv6-Sk-d2J" id="96g-77-TFE"/>
+                <outlet property="publishBtn" destination="K58-19-IJv" id="RFE-Ye-PfH"/>
+                <outlet property="tableView" destination="01R-Gq-NgP" id="8tE-yN-YAX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vrr-c3-lfi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-Sk-d2J" customClass="PublishGenerateLeadingView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="n97-nu-ryg"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="01R-Gq-NgP" customClass="BaseTableView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-3U-ftB">
+                    <rect key="frame" x="49" y="772" width="316" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-Dt-7ER" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="2" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="BgE-Ff-XE2"/>
+                                <constraint firstAttribute="width" constant="26" id="qEY-Cf-XdS"/>
+                            </constraints>
+                            <state key="normal" image="agreement_no"/>
+                            <state key="selected" image="agreement_yes"/>
+                            <connections>
+                                <action selector="clickToAgreeAgreement:" destination="-1" eventType="touchUpInside" id="1AZ-fC-fVa"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gg-ij-cB7">
+                            <rect key="frame" x="26" y="6.6666666666666288" width="71.666666666666671" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.4392156862745098" green="0.45098039215686275" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《艺术融媒体视频上传用户协议》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spg-X8-DBA">
+                            <rect key="frame" x="101.66666666666664" y="-2" width="214.33333333333337" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.066666666666666666" green="0.40392156862745099" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4v-9y-9SG" customClass="AMButton">
+                            <rect key="frame" x="101.66666666666664" y="-2" width="214.33333333333337" height="34"/>
+                            <connections>
+                                <action selector="clickToShowAgreement:" destination="-1" eventType="touchUpInside" id="ePx-Br-sPs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0gg-ij-cB7" firstAttribute="leading" secondItem="kbf-Dt-7ER" secondAttribute="trailing" id="8lV-0Y-slW"/>
+                        <constraint firstItem="D4v-9y-9SG" firstAttribute="leading" secondItem="Spg-X8-DBA" secondAttribute="leading" id="BBs-eI-xFv"/>
+                        <constraint firstItem="Spg-X8-DBA" firstAttribute="leading" secondItem="0gg-ij-cB7" secondAttribute="trailing" constant="4" id="FOd-Th-eGT"/>
+                        <constraint firstItem="D4v-9y-9SG" firstAttribute="bottom" secondItem="Spg-X8-DBA" secondAttribute="bottom" id="GWA-9H-92g"/>
+                        <constraint firstItem="kbf-Dt-7ER" firstAttribute="centerY" secondItem="H8E-3U-ftB" secondAttribute="centerY" id="MGh-zF-34s"/>
+                        <constraint firstAttribute="height" constant="30" id="QeJ-c9-6XL"/>
+                        <constraint firstItem="Spg-X8-DBA" firstAttribute="centerY" secondItem="H8E-3U-ftB" secondAttribute="centerY" id="SXi-6a-Vmv"/>
+                        <constraint firstItem="0gg-ij-cB7" firstAttribute="centerY" secondItem="H8E-3U-ftB" secondAttribute="centerY" id="bJN-dd-Xl4"/>
+                        <constraint firstAttribute="trailing" secondItem="Spg-X8-DBA" secondAttribute="trailing" id="cpX-gk-Jr3"/>
+                        <constraint firstItem="kbf-Dt-7ER" firstAttribute="leading" secondItem="H8E-3U-ftB" secondAttribute="leading" id="qYJ-R3-F4o"/>
+                        <constraint firstItem="D4v-9y-9SG" firstAttribute="trailing" secondItem="Spg-X8-DBA" secondAttribute="trailing" id="rOE-LT-0n4"/>
+                        <constraint firstItem="D4v-9y-9SG" firstAttribute="top" secondItem="Spg-X8-DBA" secondAttribute="top" id="t2D-Ad-gYn"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="74d-DR-DAo">
+                    <rect key="frame" x="15" y="812" width="384" height="40"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-N9-czp" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qpn-e5-wBh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="删除">
+                                <color key="titleColor" red="0.086274509799999996" green="0.08235294118" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickToDelete:" destination="-1" eventType="touchUpInside" id="yuu-RU-dZr"/>
+                                <action selector="clickToPublish:" destination="-1" eventType="touchUpInside" id="0z3-Du-MNw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K58-19-IJv" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                            <color key="backgroundColor" red="0.70588235294117641" green="0.72156862745098038" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6Z2-Dx-rYv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="发布"/>
+                            <state key="disabled" title="发布">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickToPublish:" destination="-1" eventType="touchUpInside" id="spt-Vp-M1F"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jdy-N9-czp" firstAttribute="width" secondItem="K58-19-IJv" secondAttribute="width" id="fpV-8q-hVh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="74d-DR-DAo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="0B6-cS-oAC"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="74d-DR-DAo" secondAttribute="bottom" constant="10" id="5dY-56-ZJF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="74d-DR-DAo" secondAttribute="trailing" constant="15" id="C0A-Vz-bCd"/>
+                <constraint firstItem="vrr-c3-lfi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Isd-Su-7Wp"/>
+                <constraint firstItem="H8E-3U-ftB" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="O3D-cc-DO6"/>
+                <constraint firstItem="H8E-3U-ftB" firstAttribute="top" secondItem="vrr-c3-lfi" secondAttribute="bottom" constant="10" id="U6s-5V-WD9"/>
+                <constraint firstItem="74d-DR-DAo" firstAttribute="top" secondItem="H8E-3U-ftB" secondAttribute="bottom" constant="10" id="gi6-qp-IeV"/>
+                <constraint firstItem="vrr-c3-lfi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hRJ-i2-joF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vrr-c3-lfi" secondAttribute="trailing" id="nBu-x8-AdY"/>
+            </constraints>
+            <point key="canvasLocation" x="139.13043478260872" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="D4v-9y-9SG">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="K58-19-IJv">
+            <size key="intrinsicContentSize" width="37" height="34"/>
+        </designable>
+        <designable name="jdy-N9-czp">
+            <size key="intrinsicContentSize" width="37" height="34"/>
+        </designable>
+        <designable name="kbf-Dt-7ER">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="agreement_no" width="12" height="12"/>
+        <image name="agreement_yes" width="12" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

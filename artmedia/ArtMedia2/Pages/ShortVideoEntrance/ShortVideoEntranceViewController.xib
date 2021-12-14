@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShortVideoEntranceViewController">
+            <connections>
+                <outlet property="closeBtn" destination="ClY-2X-grv" id="mGA-YJ-fWO"/>
+                <outlet property="editBtn" destination="e6m-BN-6pK" id="Rei-7w-1xQ"/>
+                <outlet property="imageBtn" destination="4Hs-cC-kkH" id="RoU-i7-7Nx"/>
+                <outlet property="mainView" destination="ODQ-rZ-r62" id="GQh-xx-Y3n"/>
+                <outlet property="shotBtn" destination="abR-VQ-zdq" id="sQn-VB-AuO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WiX-fo-k7X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODQ-rZ-r62">
+                    <rect key="frame" x="0.0" y="660" width="414" height="236"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-2X-grv" customClass="AMButton">
+                            <rect key="frame" x="181" y="150" width="52" height="52"/>
+                            <state key="normal" image="main_upload_close"/>
+                            <connections>
+                                <action selector="clickToClose:" destination="-1" eventType="touchUpInside" id="JeN-k0-l7l"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6m-BN-6pK" customClass="AMVideoEntranceBtn">
+                            <rect key="frame" x="157" y="30" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="e6m-BN-6pK" secondAttribute="height" id="o3E-7T-gNC"/>
+                            </constraints>
+                            <state key="normal" title="上传" image="upload_edit">
+                                <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickToVideoEdit:" destination="-1" eventType="touchUpInside" id="m9U-w8-ORh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abR-VQ-zdq" customClass="AMVideoEntranceBtn">
+                            <rect key="frame" x="20" y="40" width="117" height="80"/>
+                            <state key="normal" title="拍摄" image="upload_camera">
+                                <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickToVideoShot:" destination="-1" eventType="touchUpInside" id="A8D-Dm-hAy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hs-cC-kkH" customClass="AMVideoEntranceBtn">
+                            <rect key="frame" x="277" y="40" width="117" height="80"/>
+                            <state key="normal" title="图片" image="upload_img">
+                                <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickToVideoForImage:" destination="-1" eventType="touchUpInside" id="hQl-Pz-VCq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Jsc-3e-MHP"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jsc-3e-MHP" firstAttribute="trailing" secondItem="4Hs-cC-kkH" secondAttribute="trailing" constant="20" id="0H6-Rc-Y33"/>
+                        <constraint firstItem="4Hs-cC-kkH" firstAttribute="centerY" secondItem="abR-VQ-zdq" secondAttribute="centerY" id="0g9-eh-Cgw"/>
+                        <constraint firstItem="e6m-BN-6pK" firstAttribute="leading" secondItem="abR-VQ-zdq" secondAttribute="trailing" constant="20" id="6eV-4V-B38"/>
+                        <constraint firstItem="ClY-2X-grv" firstAttribute="top" secondItem="e6m-BN-6pK" secondAttribute="bottom" constant="20" id="GR1-c5-STM"/>
+                        <constraint firstItem="e6m-BN-6pK" firstAttribute="top" secondItem="Jsc-3e-MHP" secondAttribute="top" constant="30" id="S1j-HL-ehV"/>
+                        <constraint firstItem="ClY-2X-grv" firstAttribute="centerX" secondItem="Jsc-3e-MHP" secondAttribute="centerX" id="XLV-Bs-mDM"/>
+                        <constraint firstItem="abR-VQ-zdq" firstAttribute="leading" secondItem="Jsc-3e-MHP" secondAttribute="leading" constant="20" id="YNU-7I-6pF"/>
+                        <constraint firstItem="Jsc-3e-MHP" firstAttribute="bottom" secondItem="ClY-2X-grv" secondAttribute="bottom" id="cls-p4-iHR"/>
+                        <constraint firstItem="e6m-BN-6pK" firstAttribute="centerY" secondItem="abR-VQ-zdq" secondAttribute="centerY" id="lWt-Ve-TIH"/>
+                        <constraint firstItem="4Hs-cC-kkH" firstAttribute="leading" secondItem="e6m-BN-6pK" secondAttribute="trailing" constant="20" id="sc9-r7-vtP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ODQ-rZ-r62" secondAttribute="trailing" id="Nhb-2a-EGW"/>
+                <constraint firstItem="ODQ-rZ-r62" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="f9B-CC-qbr"/>
+                <constraint firstItem="ODQ-rZ-r62" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="kFZ-6c-ioB"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ClY-2X-grv">
+            <size key="intrinsicContentSize" width="52" height="52"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="main_upload_close" width="52" height="52"/>
+        <image name="upload_camera" width="80" height="80"/>
+        <image name="upload_edit" width="80" height="80"/>
+        <image name="upload_img" width="80" height="80"/>
+    </resources>
+</document>

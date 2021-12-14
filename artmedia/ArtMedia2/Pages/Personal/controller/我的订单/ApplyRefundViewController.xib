@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplyRefundViewController">
+            <connections>
+                <outlet property="confirmButton" destination="pxp-rk-xGU" id="SfF-jw-brC"/>
+                <outlet property="contentTV" destination="R14-5E-O5e" id="KiT-Ou-j0R"/>
+                <outlet property="isReceiveGoodsBtn" destination="5UF-wq-Bek" id="fIB-Pf-GLU"/>
+                <outlet property="receiveGoodsLabel" destination="x7b-Fp-pmg" id="J4h-eA-gNq"/>
+                <outlet property="receiveView" destination="uSE-gu-aLJ" id="uDg-h9-Zeu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R14-5E-O5e" customClass="AMTextView">
+                    <rect key="frame" x="15" y="59" width="384" height="192"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="R14-5E-O5e" secondAttribute="height" multiplier="2:1" id="Npb-AZ-jNs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-gu-aLJ">
+                    <rect key="frame" x="15" y="266" width="384" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否收到货物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7b-Fp-pmg">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UF-wq-Bek" customClass="AMButton">
+                            <rect key="frame" x="326" y="8" width="50" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="inu-69-hgb"/>
+                            </constraints>
+                            <state key="normal" image="switch_close"/>
+                            <state key="selected" image="switch_open"/>
+                            <connections>
+                                <action selector="clickToReceive:" destination="-1" eventType="touchUpInside" id="ICA-wm-ZcW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="24s-Rh-WFs"/>
+                        <constraint firstAttribute="trailing" secondItem="5UF-wq-Bek" secondAttribute="trailing" constant="8" id="3Xz-ip-YT5"/>
+                        <constraint firstAttribute="bottom" secondItem="x7b-Fp-pmg" secondAttribute="bottom" id="QXt-F2-5ci"/>
+                        <constraint firstItem="x7b-Fp-pmg" firstAttribute="leading" secondItem="uSE-gu-aLJ" secondAttribute="leading" id="YzZ-fr-b9l"/>
+                        <constraint firstItem="5UF-wq-Bek" firstAttribute="top" secondItem="uSE-gu-aLJ" secondAttribute="top" constant="8" id="pQQ-Ys-xVm"/>
+                        <constraint firstItem="x7b-Fp-pmg" firstAttribute="top" secondItem="uSE-gu-aLJ" secondAttribute="top" id="u2s-Dn-d9i"/>
+                        <constraint firstAttribute="bottom" secondItem="5UF-wq-Bek" secondAttribute="bottom" constant="8" id="ygp-6Q-Eoo"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxp-rk-xGU" customClass="AMButton">
+                    <rect key="frame" x="15" y="812" width="384" height="40"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4oS-6Z-o5R"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="bottomClick:" destination="-1" eventType="touchUpInside" id="5YZ-tP-1MR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R14-5E-O5e" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="5HA-g8-5vO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pxp-rk-xGU" secondAttribute="trailing" constant="15" id="Db3-zH-25a"/>
+                <constraint firstItem="uSE-gu-aLJ" firstAttribute="top" secondItem="R14-5E-O5e" secondAttribute="bottom" constant="15" id="QEW-jJ-aGa"/>
+                <constraint firstItem="R14-5E-O5e" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="SIO-dy-ZL3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="R14-5E-O5e" secondAttribute="trailing" constant="15" id="V9Z-6g-ZK9"/>
+                <constraint firstItem="uSE-gu-aLJ" firstAttribute="trailing" secondItem="R14-5E-O5e" secondAttribute="trailing" id="mJk-Qy-rje"/>
+                <constraint firstItem="pxp-rk-xGU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="pUz-l5-fIN"/>
+                <constraint firstItem="uSE-gu-aLJ" firstAttribute="leading" secondItem="R14-5E-O5e" secondAttribute="leading" id="sXD-i9-om3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="pxp-rk-xGU" secondAttribute="bottom" constant="10" id="yX5-Vg-p6A"/>
+            </constraints>
+            <point key="canvasLocation" x="29.600000000000001" y="137.18140929535232"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5UF-wq-Bek">
+            <size key="intrinsicContentSize" width="36" height="22"/>
+        </designable>
+        <designable name="pxp-rk-xGU">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="switch_close" width="36" height="18"/>
+        <image name="switch_open" width="36" height="18"/>
+    </resources>
+</document>

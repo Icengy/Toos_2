@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LivingRoomSubViewController">
+            <connections>
+                <outlet property="collectionView" destination="xwj-fn-MhP" id="RmU-Jz-9Ju"/>
+                <outlet property="inputTF" destination="ncm-8K-sWa" id="Yw0-Eo-GVI"/>
+                <outlet property="titlleLabel" destination="9cM-8R-y6p" id="jBU-cz-ila"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xwj-fn-MhP">
+                    <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sSf-xG-BKA">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCC-Id-Ypo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部会客厅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cM-8R-y6p">
+                            <rect key="frame" x="16" y="16" width="77" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.1019607843" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索感兴趣的会客厅" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncm-8K-sWa" customClass="AMTextField">
+                            <rect key="frame" x="219" y="10" width="180" height="30"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ncm-8K-sWa" secondAttribute="height" multiplier="6" id="lLq-Mj-tHg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ncm-8K-sWa" secondAttribute="trailing" constant="15" id="4U3-iA-MWO"/>
+                        <constraint firstItem="9cM-8R-y6p" firstAttribute="centerY" secondItem="NCC-Id-Ypo" secondAttribute="centerY" id="8Ix-9y-JM6"/>
+                        <constraint firstItem="ncm-8K-sWa" firstAttribute="centerY" secondItem="NCC-Id-Ypo" secondAttribute="centerY" id="Rkr-PC-jAV"/>
+                        <constraint firstItem="ncm-8K-sWa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9cM-8R-y6p" secondAttribute="trailing" constant="15" id="Y1i-IF-iEf"/>
+                        <constraint firstAttribute="height" constant="50" id="rey-7K-gXY"/>
+                        <constraint firstItem="9cM-8R-y6p" firstAttribute="leading" secondItem="NCC-Id-Ypo" secondAttribute="leading" constant="16" id="rze-WB-IJW"/>
+                        <constraint firstItem="ncm-8K-sWa" firstAttribute="top" secondItem="NCC-Id-Ypo" secondAttribute="top" constant="10" id="vwI-cv-9ek"/>
+                        <constraint firstAttribute="bottom" secondItem="ncm-8K-sWa" secondAttribute="bottom" constant="10" id="z0C-dX-P56"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xwj-fn-MhP" secondAttribute="trailing" id="EKS-y5-rmC"/>
+                <constraint firstItem="xwj-fn-MhP" firstAttribute="top" secondItem="NCC-Id-Ypo" secondAttribute="bottom" id="HZT-dW-Iif"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="NCC-Id-Ypo" secondAttribute="trailing" id="Rs3-sT-agK"/>
+                <constraint firstItem="xwj-fn-MhP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="YqV-nF-v3n"/>
+                <constraint firstItem="NCC-Id-Ypo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="hzU-SE-mSl"/>
+                <constraint firstItem="NCC-Id-Ypo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="l6W-MJ-BGH"/>
+                <constraint firstAttribute="bottom" secondItem="xwj-fn-MhP" secondAttribute="bottom" id="ntt-aX-bKJ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ncm-8K-sWa">
+            <size key="intrinsicContentSize" width="129" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
